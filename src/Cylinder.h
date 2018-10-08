@@ -50,6 +50,13 @@ public:
                            vec3&       _intersection_normal,
                            double&     _intersection_t) const override;
 
+
+    virtual vec3 checkNormal(double a, 
+			     double min, 
+			     vec3 &point, 
+			     const Ray &_ray, 
+			     vec3 &normal) const;
+
     /// parse cylinder from an input stream
     virtual void parse(std::istream &is) override {
         is >> center >> radius >> axis >> height >> material;
