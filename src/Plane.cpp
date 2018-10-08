@@ -36,10 +36,28 @@ intersect(const Ray& _ray,
           double&    _intersection_t ) const
 {
 
-    // \todo Copy your assignment 1 solution here.
+/** \todo
+ * - compute the intersection of the plane with `_ray`
+ * - if ray and plane are parallel there is no intersection
+ * - otherwise compute intersection data and store it in `_intersection_point`, `_intersection_normal`, and `_intersection_t`.
+ * - return whether there is an intersection in front of the viewer (t > 0)
+*/
 
-    return false;
+    const vec3 &dir = _ray.direction;
+    const vec3   oc = _ray.origin - center;
+
+    double denom = dot(normal, dir);
+if (denom != 0) // your favorite epsilon
+{
+    double t = (dot(normal, center)-dot(normal, _ray.origin)) / denom;
+    if (t > 0.0001f){ 
+	_intersection_point  = _ray(t);
+	_intersection_normal = normal;
+	_intersection_t = t;
+	return true; 
+	}
 }
-
+return false;
+}
 
 //=============================================================================
