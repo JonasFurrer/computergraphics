@@ -102,7 +102,22 @@ vec3 Scene::trace(const Ray& _ray, int _depth)
      * - check whether your recursive algorithm reflects the ray `max_depth` times
      */
 
-    return color;
+	double alpha = object->material.mirror;
+	//vec3 out = _ray.direction - 2.f * dot(_ray.direction, normal) * normal;
+	//vec3 out2 = 
+	
+
+	if(alpha == 0 || _depth > max_depth){
+		return color;
+	}
+	
+	vec3 reflectedVector = reflect(_ray.direction,normal);
+	Ray reflectionRay = Ray(point+1E-12 * reflectedVector, reflectedVector);
+	vec3 reflectedColor = trace(reflectionRay, ++_depth);	
+	
+
+    return color = (1-alpha)*color+alpha*reflectedColor;
+	
 }
 
 //-----------------------------------------------------------------------------
@@ -144,7 +159,6 @@ vec3 Scene::lighting(const vec3& _point, const vec3& _normal, const vec3& _view,
      * the existing vector functions in vec3.h e.g. mirror, reflect, norm, dot, normalize
      */
 	vec3 intensity = ambience * _material.ambient;
-	vec3 displacedPoint = _point * 1.1;
 
 	Object_ptr  object;
     vec3        point;
@@ -152,6 +166,7 @@ vec3 Scene::lighting(const vec3& _point, const vec3& _normal, const vec3& _view,
     double      t;
 
 	for (Light x:lights) {
+	vec3 displacedPoint = _point + 1E-12*x.position;
 	Ray displacedRay(displacedPoint, x.position-displacedPoint);
 		if(intersect(displacedRay, object, point, normal, t) == false){
 			if(dot(normalize((x.position - _point)), normalize(_normal)) >= 0){

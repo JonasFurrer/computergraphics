@@ -66,7 +66,7 @@ public:
     * 	@param _material holds material parameters of the `_point`, that should be lit.
     */
     vec3  lighting(const vec3& _point, const vec3& _normal, const vec3& _view, const Material& _material);
-    vec3  diffuse();
+    //vec3  diffuse();
     void read(const std::string &filename);
 
     size_t numObjects() const { return objects.size(); }
