@@ -90,9 +90,8 @@ vec3 Scene::trace(const Ray& _ray, int _depth)
         return background;
     }
 
-    // compute local Phong lighting (ambient+diffuse+specular)
+    // compute local Phong lighting
     vec3 color = lighting(point, normal, -_ray.direction, object->material);
-
 
     /** \todo
      * Compute reflections by recursive ray tracing:
@@ -131,6 +130,7 @@ bool Scene::intersect(const Ray& _ray, Object_ptr& _object, vec3& _point, vec3& 
     return (tmin != Object::NO_INTERSECTION);
 }
 
+
 vec3 Scene::lighting(const vec3& _point, const vec3& _normal, const vec3& _view, const Material& _material)
 {
 
@@ -143,9 +143,34 @@ vec3 Scene::lighting(const vec3& _point, const vec3& _normal, const vec3& _view,
      * You can look at the classes `Light` and `Material` to check their attributes. Feel free to use
      * the existing vector functions in vec3.h e.g. mirror, reflect, norm, dot, normalize
      */
+	vec3 intensity = ambience * _material.ambient;
+	vec3 displacedPoint = _point * 1.1;
 
+	Object_ptr  object;
+    vec3        point;
+    vec3        normal;
+    double      t;
+
+	for (Light x:lights) {
+	Ray displacedRay(displacedPoint, x.position-displacedPoint);
+		if(intersect(displacedRay, object, point, normal, t) == false){
+			if(dot(normalize((x.position - _point)), normalize(_normal)) >= 0){
+				intensity += x.color * _material.diffuse * dot(normalize((x.position - _point)), normalize(_normal));
+
+				vec3 r = normalize((x.position - _point)*(-1) + 2*_normal);
+				vec3 v = normalize(_view);  
+
+				if(dot(r, v) >= 0){
+					intensity += x.color * _material.specular * pow((dot(r, v)),_material.shininess);
+				}		
+			}		
+		}
+	}
+									
+								
+	
     // visualize the normal as a RGB color for now.
-    vec3 color = (_normal + vec3(1)) / 2.0;
+    vec3 color = intensity; //(_normal + intensity) / 2.0;
 
     return color;
 }
@@ -185,4 +210,4 @@ void Scene::read(const std::string &_filename)
 }
 
 
-//=============================================================================
+//============================================================================= (ambient+diffuse+specular)
