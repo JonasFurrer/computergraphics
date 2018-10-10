@@ -172,13 +172,12 @@ vec3 Scene::lighting(const vec3& _point, const vec3& _normal, const vec3& _view,
 			if(dot(normalize((x.position - _point)), normalize(_normal)) >= 0){
 				intensity += x.color * _material.diffuse * dot(normalize((x.position - _point)), normalize(_normal));
 
-				vec3 r = normalize((x.position - _point)*(-1) + 2*_normal);
+				vec3 r = 2*_normal*(dot(_normal, normalize(x.position - _point)))- normalize(x.position - _point); 
 				vec3 v = normalize(_view);  
-
 				if(dot(r, v) >= 0){
-					intensity += x.color * _material.specular * pow((dot(r, v)),_material.shininess);
-				}		
-			}		
+				intensity += x.color * _material.specular * pow((dot(r, v)),_material.shininess);
+				}			
+			}	
 		}
 	}
 									
