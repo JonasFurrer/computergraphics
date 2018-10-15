@@ -87,3 +87,15 @@ instructions. Note: there is a theory exercise for this assignment!
 Assignment 2: Phong Lighting
 ----------------------------
 In this assignment you will implement the Phong Lighting Model, shadows and reflections. Fill in the missing code in the file Scene.cpp. Follow the instructions in TODO comments and assignment sheet.
+
+
+Assignment 3: Triangle Meshes
+-----------------------------
+In this assignment you will need to edit the Mesh.cpp file.
+
+- Compute vertex normals weighted by opening angles in Mesh::compute_normals().
+- Compute the ray-triangle intersection with barycentric coordinates using Cramer's rule within Mesh::intersect_triangle() function. For intersections normals use triangle normals when flat shading or interpolate vertex normals when Phong shading.
+- To improve the computation time use the axis-aligned bounding box test for triangle meshes. Implement the ray-box intersection within Mesh::intersect_bounding_box().
+- (not graded) To parallelize your computation, install TBB or make sure OpenMP works with your compiler.
+
+For more details, please refer to the assignment handout and lecture+exercise slides.

@@ -1,0 +1,4 @@
+/home/jones/Documents/Computergraphics/computergraphics/CMakeFiles/rebuild_cache.dir
+/home/jones/Documents/Computergraphics/computergraphics/CMakeFiles/raytrace.dir
+/home/jones/Documents/Computergraphics/computergraphics/CMakeFiles/edit_cache.dir
+/home/jones/Documents/Computergraphics/computergraphics/CMakeFiles/debug_aabb.dir
