@@ -150,6 +150,15 @@ void Mesh::compute_normals()
     {
         v.normal = vec3(0,0,0);
     }
+    
+    /** \todo
+     * In some scenes (e.g the office scene) some objects should be flat
+     * shaded (e.g. the desk) while other objects should be Phong shaded to appear
+     * realistic (e.g. chairs). You have to implement the following:
+     * - Compute vertex normals by averaging the normals of their incident triangles.
+     * - Store the vertex normals in the Vertex::normal member variable.
+     * - Weigh the normals by their triangles' angles.
+     */
 
     /** \todo
      * In some scenes (e.g the office scene) some objects should be flat
@@ -307,6 +316,20 @@ intersect_triangle(const Triangle&  _triangle,
     const vec3& p0 = vertices_[_triangle.i0].position;
     const vec3& p1 = vertices_[_triangle.i1].position;
     const vec3& p2 = vertices_[_triangle.i2].position;
+    
+     /** \todo
+    * - intersect _ray with _triangle
+    * - store intersection point in `_intersection_point`
+    * - store ray parameter in `_intersection_t`
+    * - store normal at intersection point in `_intersection_normal`.
+    * - Depending on the member variable `draw_mode_`, use either the triangle
+    *  normal (`Triangle::normal`) or interpolate the vertex normals (`Vertex::normal`).
+    * - return `true` if there is an intersection with t > 0 (in front of the viewer)
+    *
+    * Hint: Rearrange `ray.origin + t*ray.dir = a*p0 + b*p1 + (1-a-b)*p2` to obtain a solvable
+    * system for a, b and t.
+    * Refer to [Cramer's Rule](https://en.wikipedia.org/wiki/Cramer%27s_rule) to easily solve it.
+     */
 
     const float kEpsilon = 1E-2;
     vec3 edge1, edge2, h, s, q;

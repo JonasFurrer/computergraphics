@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/raytrace.dir/raytrace.o CMakeFiles/raytrace.dir/Cylinder.o CMakeFiles/raytrace.dir/Mesh.o CMakeFiles/raytrace.dir/Plane.o CMakeFiles/raytrace.dir/Scene.o CMakeFiles/raytrace.dir/Sphere.o CMakeFiles/raytrace.dir/vec3.o  -o raytrace 

@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/debug_aabb.dir/debug_aabb.o CMakeFiles/debug_aabb.dir/Cylinder.o CMakeFiles/debug_aabb.dir/Mesh.o CMakeFiles/debug_aabb.dir/Plane.o CMakeFiles/debug_aabb.dir/Scene.o CMakeFiles/debug_aabb.dir/Sphere.o CMakeFiles/debug_aabb.dir/vec3.o  -o debug_aabb 
