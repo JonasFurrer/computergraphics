@@ -97,6 +97,9 @@ public:
                             vec3&            _intersection_normal,
                             double&          _intersection_t) const;
 
+    double& calcMin(double& a, double& b) const;
+    double& calcMax(double& a, double& b) const;
+
 private:
     /// Does this mesh use flat or Phong shading?
     Draw_mode draw_mode_;
