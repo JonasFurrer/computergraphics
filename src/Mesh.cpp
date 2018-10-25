@@ -7,15 +7,7 @@
 //   Copyright (C) Computer Graphics Group, Bielefeld University.
 //
 //=============================================================================
-//   Done by: Jonas Furrer, Alessandro Esposito
-//   With help of:
-//   https://en.wikipedia.org/wiki/M%C3%B6ller%E2%80%93Trumbore_intersection_algorithm
-//   https://www.scratchapixel.com/lessons/3d-basic-rendering/ray-tracing-rendering-a-triangle/moller-trumbore-ray-triangle-intersection
-//   https://www.scratchapixel.com/lessons/3d-basic-rendering/minimal-ray-tracer-rendering-simple-shapes/ray-box-intersection
-//   http://www.cs.utah.edu/~awilliam/box/box.pdf
-//   https://gamedev.stackexchange.com/questions/18436/most-efficient-aabb-vs-ray-collision-algorithms
-//
-//   We also worked in the pool hour with another group so our solutions might be similar
+
 //== INCLUDES =================================================================
 
 #include "Mesh.h"
@@ -150,42 +142,27 @@ void Mesh::compute_normals()
     {
         v.normal = vec3(0,0,0);
     }
-    
-    /** \todo
-     * In some scenes (e.g the office scene) some objects should be flat
-     * shaded (e.g. the desk) while other objects should be Phong shaded to appear
-     * realistic (e.g. chairs). You have to implement the following:
-     * - Compute vertex normals by averaging the normals of their incident triangles.
-     * - Store the vertex normals in the Vertex::normal member variable.
-     * - Weigh the normals by their triangles' angles.
-     */
 
-    /** \todo
-     * In some scenes (e.g the office scene) some objects should be flat
-     * shaded (e.g. the desk) while other objects should be Phong shaded to appear
-     * realistic (e.g. chairs). You have to implement the following:
-     * - Compute vertex normals by averaging the normals of their incident triangles.
-     * - Store the vertex normals in the Vertex::normal member variable.
-     * - Weigh the normals by their triangles' angles.
-     */
+    // compute triangle normals and add them to vertices
+    for (Triangle& t: triangles_)
+    {
+        double w0, w1, w2;
+        angleWeights(vertices_[t.i0].position,
+                     vertices_[t.i1].position,
+                     vertices_[t.i2].position,
+                     w0, w1, w2);
 
-    for(Triangle q: triangles_)
-	{
-		double w0, w1, w2;
-		angleWeights(vertices_[q.i0].position,vertices_[q.i1].position,vertices_[q.i2].position,w0,w1,w2);
-		vertices_[q.i0].normal += w0*q.normal ;
-		vertices_[q.i1].normal += w1*q.normal ;
-		vertices_[q.i2].normal += w2*q.normal ;
+        // scatter face normals to vertex normals
+        vertices_[t.i0].normal += w0 * t.normal;
+        vertices_[t.i1].normal += w1 * t.normal;
+        vertices_[t.i2].normal += w2 * t.normal;
+    }
 
-	}
-	
-	for(Vertex v: vertices_){
-
-		v.normal = normalize(v.normal);
-
-	}
-
-
+    // normalize vertex normals
+    for (Vertex& v: vertices_)
+    {
+        v.normal = normalize(v.normal);
+    }
 }
 
 
@@ -210,55 +187,36 @@ void Mesh::compute_bounding_box()
 
 bool Mesh::intersect_bounding_box(const Ray& _ray) const
 {
-    std::numeric_limits<double>::max();
-    std::numeric_limits<double>::min();
-    // r.dir is unit direction vector of ray
-    vec3 dirfrac = vec3(0,0,0);
-    dirfrac[0] = 1.0 / _ray.direction[0];
-    dirfrac[1] = 1.0 / _ray.direction[1];
-    dirfrac[2] = 1.0 / _ray.direction[2];
-// lb is the corner of AABB with minimal coordinates - left bottom, rt is maximal corner
-// r.org is origin of ray
-    double t1 = (bb_min_[0] - _ray.origin[0])*dirfrac[0];
-    double t2 = (bb_max_[0] - _ray.origin[0])*dirfrac[0];
-    double t3 = (bb_min_[1] - _ray.origin[1])*dirfrac[1];
-    double t4 = (bb_max_[1] - _ray.origin[1])*dirfrac[1];
-    double t5 = (bb_min_[2] - _ray.origin[2])*dirfrac[2];
-    double t6 = (bb_max_[2] - _ray.origin[2])*dirfrac[2];
 
-    double tmin = calcMax(calcMax(calcMin(t1, t2), calcMin(t3, t4)), calcMin(t5, t6));
-    double tmax = calcMin(calcMin(calcMax(t1, t2), calcMax(t3, t4)), calcMax(t5, t6));
+    double t_min = 0.f;
+    double t_max = std::numeric_limits<double>::infinity();
 
-// if tmax < 0, ray (line) is intersecting AABB, but the whole AABB is behind us
-    if (tmax < 0)
+    for (int i=0; i<3; ++i)
     {
-        return false;
-    }
+        const double div = 1.0/_ray.direction[i];
 
-// if tmin > tmax, ray doesn't intersect AABB
-    if (tmin > tmax)
-    {
-        return false;
+        // intersect ray with min/max slab plane
+        double t1 = (bb_min_[i] - _ray.origin[i]) * div;
+        double t2 = (bb_max_[i] - _ray.origin[i]) * div;
+
+        // note the special case when direction[i] = 0
+        // => t1 and t2 will become -inf and inf if 0 is in the slab,
+        // inf & inf or -inf & -inf if it is outside
+
+        if (t1 > t2) {
+            std::swap(t1, t2);
+        }
+
+        t_min = std::fmax(t_min, t1);
+        t_max = std::fmin(t_max, t2);
+
+        // check for valid intersection
+        if (t_min > t_max) {
+            return false;
+        }
     }
 
     return true;
-    
-}
-
-double& Mesh::calcMax(double& a, double& b) const
-{
-    if (a > b) {
-        return a;
-    }
-    return b;
-}
-
-double& Mesh::calcMin(double& a, double& b) const
-{
-    if (a < b) {
-        return a;
-    }
-    return b;
 }
 
 
@@ -304,6 +262,11 @@ bool Mesh::intersect(const Ray& _ray,
 
 //-----------------------------------------------------------------------------
 
+/** Return the determinant of the 3x3 matrix ( a b c ).
+ */
+inline double det(const vec3 &a, const vec3 &b, const vec3 &c) {
+    return dot(cross(a,b),c);
+}
 
 bool
 Mesh::
@@ -316,63 +279,56 @@ intersect_triangle(const Triangle&  _triangle,
     const vec3& p0 = vertices_[_triangle.i0].position;
     const vec3& p1 = vertices_[_triangle.i1].position;
     const vec3& p2 = vertices_[_triangle.i2].position;
-    
-     /** \todo
-    * - intersect _ray with _triangle
-    * - store intersection point in `_intersection_point`
-    * - store ray parameter in `_intersection_t`
-    * - store normal at intersection point in `_intersection_normal`.
-    * - Depending on the member variable `draw_mode_`, use either the triangle
-    *  normal (`Triangle::normal`) or interpolate the vertex normals (`Vertex::normal`).
-    * - return `true` if there is an intersection with t > 0 (in front of the viewer)
-    *
-    * Hint: Rearrange `ray.origin + t*ray.dir = a*p0 + b*p1 + (1-a-b)*p2` to obtain a solvable
-    * system for a, b and t.
-    * Refer to [Cramer's Rule](https://en.wikipedia.org/wiki/Cramer%27s_rule) to easily solve it.
-     */
 
-    const float kEpsilon = 1E-2;
-    vec3 edge1, edge2, h, s, q;
-    float a,f,u,v;
-    edge1 = p1 - p0;
-    edge2 = p2 - p0;
-    h = cross(_ray.direction, edge2);
-    a = dot(edge1, h);
-    if (a > -kEpsilon && a < kEpsilon)
-        return false;    // This ray is parallel to this triangle.
-    f = 1.0/a;
-    s = _ray.origin - p0;
-    u = f * dot(s, h);
-    if (u < 0.0 || u > 1.0)
-        return false;
-    q = cross(s, edge1);
-    v = f * dot(_ray.direction, q);
-    if (v < 0.0 || u + v > 1.0)
-        return false;
-    // At this stage we can compute t to find out where the intersection point is on the line.
-    float t = f * dot(edge2, q);
 
-	
-	if(draw_mode_ == FLAT)
-	{  
-		_intersection_normal = normalize(_triangle.normal); 
-	}
+    // solve ray.origin + t*ray.dir = a*p0 + b*p1 + (1-a-b)*p2
+    // rearrange to get a 3x3 system A * x = b
+    // solve it using Cramer's rule
 
-	else if(draw_mode_ == PHONG)
-	{ 
-		_intersection_normal = normalize((1-u-v)*vertices_[_triangle.i0].normal + u*vertices_[_triangle.i1].normal + v*vertices_[_triangle.i2].normal);	
-	}
+    // columns of the matrix
+    vec3 a1 = -_ray.direction;
+    vec3 a2 = p1-p0;
+    vec3 a3 = p2-p0;
 
-	if(t > kEpsilon){
-	
-	_intersection_point = _ray.origin + t*_ray.direction;
-	_intersection_t = t;
-    return true; 
-	}else{
+    // right hand side of linear system
+    vec3  b = _ray.origin - p0;
 
-	return false;
-	}
-	
+    const double denom = det(a1, a2, a3);
+    if (fabs(denom) <= std::numeric_limits<double>::lowest()) return false;
+
+    const double beta = det(a1, b, a3) / denom;
+    if (beta < 0.0 || beta > 1.0) return false;
+
+    const double gamma = det(a1, a2, b) / denom;
+    if (gamma < 0.0 || beta+gamma > 1.0) return false;
+
+    const double alpha = 1.0 - beta - gamma;
+
+    double t = det(b, a2, a3) / denom;
+    if (t <= 0) return false;
+
+    _intersection_t      = t;
+    _intersection_point  = _ray(t);
+
+    switch (draw_mode_)
+    {
+        case FLAT:
+        {
+            _intersection_normal = _triangle.normal;
+            break;
+        }
+
+        case PHONG:
+        {
+            const vec3& n0 = vertices_[_triangle.i0].normal;
+            const vec3& n1 = vertices_[_triangle.i1].normal;
+            const vec3& n2 = vertices_[_triangle.i2].normal;
+            _intersection_normal = normalize(n0*alpha + n1*beta + n2*gamma);
+            break;
+        }
+    }
+
+    return true;
 }
 
 
