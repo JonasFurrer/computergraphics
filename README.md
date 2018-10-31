@@ -33,7 +33,6 @@ Inside the exercise's top-level directory, execute the following commands:
     cmake -G Xcode ..
     open RayTracing.xcodeproj
 
-
 Building under Microsoft Windows (Visual Studio)
 ------------------------------------------------
 
@@ -67,7 +66,6 @@ Edit scenes/solid_color/solid_color.sce to produce the color of your choice and 
 
 Please also consider setting up a private GitHub repository for your group to collaborate on the future raytracing assignments.
 
-
 Assignment 1: Planes and Cylinders
 ----------------------------------
 In this assignment, you will implement ray intersections with planes and
@@ -83,11 +81,9 @@ fellow group members, you can copy these TODO comments over to your repository
 Please see the assignment handout PDF for more information and submission
 instructions. Note: there is a theory exercise for this assignment!
 
-
 Assignment 2: Phong Lighting
 ----------------------------
 In this assignment you will implement the Phong Lighting Model, shadows and reflections. Fill in the missing code in the file Scene.cpp. Follow the instructions in TODO comments and assignment sheet.
-
 
 Assignment 3: Triangle Meshes
 -----------------------------
@@ -99,3 +95,11 @@ In this assignment you will need to edit the Mesh.cpp file.
 - (not graded) To parallelize your computation, install TBB or make sure OpenMP works with your compiler.
 
 For more details, please refer to the assignment handout and lecture+exercise slides.
+
+Assignment 4: OpenGL Hello World
+--------------------------------
+Your only task for the OpenGL part of Assignment 4 is to make sure the OpenGL
+exercise framework code builds and runs on your machine. Please submit a
+screenshot of the "Solar System" window running on your machine. Refer to the
+assignment handout PDF on Moodle for an example of what you should see if
+everything is working properly.
