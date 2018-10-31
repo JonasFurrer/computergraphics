@@ -1,0 +1,13 @@
+/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/CMakeFiles/rebuild_cache.dir
+/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/CMakeFiles/edit_cache.dir
+/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src/CMakeFiles/rebuild_cache.dir
+/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src/CMakeFiles/edit_cache.dir
+/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src/CMakeFiles/glfw.dir
+/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/lodePNG/CMakeFiles/edit_cache.dir
+/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/lodePNG/CMakeFiles/rebuild_cache.dir
+/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/lodePNG/CMakeFiles/lodePNG.dir
+/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/src/CMakeFiles/rebuild_cache.dir
+/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/src/CMakeFiles/edit_cache.dir
+/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/src/CMakeFiles/SolarSystem.dir
