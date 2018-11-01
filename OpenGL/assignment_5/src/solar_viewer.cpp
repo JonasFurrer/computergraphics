@@ -368,7 +368,7 @@ void Solar_viewer::paint()
         vec4 center = ship_.pos_;
         vec4      up = vec4(0,1, 0,0);
         float radius = ship_.radius_;
-        vec4     eye = vec4(center.x-0.1*ship_.direction_.x, center.y+0.01f+0.01f*sin(y_angle_), center.z-0.1f*ship_.direction_.z, 0);
+        vec4     eye = vec4(center.x-0.1*ship_.direction_.x, center.y+0.01f+0.01f*sin(deg2rad(y_angle_)), center.z-0.1f*ship_.direction_.z, 0);
         mat4    view = mat4::look_at(vec3(eye), vec3(center), vec3(up));
 
         billboard_x_angle_ = billboard_y_angle_ = 0.0f;
