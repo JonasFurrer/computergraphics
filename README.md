@@ -103,3 +103,10 @@ exercise framework code builds and runs on your machine. Please submit a
 screenshot of the "Solar System" window running on your machine. Refer to the
 assignment handout PDF on Moodle for an example of what you should see if
 everything is working properly.
+
+Assignment 5: Transformations and Viewing
+-----------------------------------------
+In this assignment, you will place the planets, moon, and space ship in the
+Solar System scene and set up the view. All of your implementation will be done
+in `src/solar_viewer.cpp`. For detailed instructions, please see the assignment
+5 handout.
