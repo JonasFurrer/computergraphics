@@ -1,5 +1,5 @@
-Ray Tracer
-==========
+Computergraphics
+=================
 
 We are using a couple of C++11 features, so please ensure that you use an up-to-date compiler (GCC 4.7 or higher, Visual Studio 2012). [CMake](www.cmake.org) is used for setting up build environments.
 
