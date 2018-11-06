@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/lodePNG/lodepng.cpp
+/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/lodePNG/lodepng.cpp
 lodepng.h
-/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/lodePNG/lodepng.h
+/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/lodePNG/lodepng.h
 stdio.h
 -
 stdlib.h
@@ -16,7 +16,7 @@ stdlib.h
 fstream
 -
 
-/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/lodePNG/lodepng.h
+/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/lodePNG/lodepng.h
 string.h
 -
 vector
@@ -24,9 +24,9 @@ vector
 string
 -
 lodepng.h
-/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/lodePNG/lodepng.h
+/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/lodePNG/lodepng.h
 iostream
 -
 lodepng.h
-/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/lodePNG/lodepng.h
+/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/lodePNG/lodepng.h
 

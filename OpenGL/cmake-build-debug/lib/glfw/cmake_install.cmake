@@ -1,4 +1,4 @@
-# Install script for directory: /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw
+# Install script for directory: /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src/cmake_install.cmake")
+  include("/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src/cmake_install.cmake")
 
 endif()
 

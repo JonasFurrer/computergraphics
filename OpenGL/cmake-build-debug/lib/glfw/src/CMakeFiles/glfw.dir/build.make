@@ -43,10 +43,10 @@ RM = /home/alessandro/clion-2018.2.5/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5
+CMAKE_SOURCE_DIR = /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug
+CMAKE_BINARY_DIR = /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include lib/glfw/src/CMakeFiles/glfw.dir/depend.make
@@ -59,172 +59,172 @@ include lib/glfw/src/CMakeFiles/glfw.dir/flags.make
 
 lib/glfw/src/CMakeFiles/glfw.dir/context.c.o: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
 lib/glfw/src/CMakeFiles/glfw.dir/context.c.o: ../lib/glfw/src/context.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/context.c.o"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw.dir/context.c.o   -c /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src/context.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/context.c.o"
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw.dir/context.c.o   -c /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/context.c
 
 lib/glfw/src/CMakeFiles/glfw.dir/context.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/context.c.i"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src/context.c > CMakeFiles/glfw.dir/context.c.i
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/context.c > CMakeFiles/glfw.dir/context.c.i
 
 lib/glfw/src/CMakeFiles/glfw.dir/context.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/context.c.s"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src/context.c -o CMakeFiles/glfw.dir/context.c.s
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/context.c -o CMakeFiles/glfw.dir/context.c.s
 
 lib/glfw/src/CMakeFiles/glfw.dir/init.c.o: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
 lib/glfw/src/CMakeFiles/glfw.dir/init.c.o: ../lib/glfw/src/init.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/init.c.o"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw.dir/init.c.o   -c /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src/init.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/init.c.o"
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw.dir/init.c.o   -c /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/init.c
 
 lib/glfw/src/CMakeFiles/glfw.dir/init.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/init.c.i"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src/init.c > CMakeFiles/glfw.dir/init.c.i
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/init.c > CMakeFiles/glfw.dir/init.c.i
 
 lib/glfw/src/CMakeFiles/glfw.dir/init.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/init.c.s"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src/init.c -o CMakeFiles/glfw.dir/init.c.s
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/init.c -o CMakeFiles/glfw.dir/init.c.s
 
 lib/glfw/src/CMakeFiles/glfw.dir/input.c.o: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
 lib/glfw/src/CMakeFiles/glfw.dir/input.c.o: ../lib/glfw/src/input.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/input.c.o"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw.dir/input.c.o   -c /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src/input.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/input.c.o"
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw.dir/input.c.o   -c /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/input.c
 
 lib/glfw/src/CMakeFiles/glfw.dir/input.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/input.c.i"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src/input.c > CMakeFiles/glfw.dir/input.c.i
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/input.c > CMakeFiles/glfw.dir/input.c.i
 
 lib/glfw/src/CMakeFiles/glfw.dir/input.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/input.c.s"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src/input.c -o CMakeFiles/glfw.dir/input.c.s
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/input.c -o CMakeFiles/glfw.dir/input.c.s
 
 lib/glfw/src/CMakeFiles/glfw.dir/monitor.c.o: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
 lib/glfw/src/CMakeFiles/glfw.dir/monitor.c.o: ../lib/glfw/src/monitor.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/monitor.c.o"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw.dir/monitor.c.o   -c /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src/monitor.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/monitor.c.o"
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw.dir/monitor.c.o   -c /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/monitor.c
 
 lib/glfw/src/CMakeFiles/glfw.dir/monitor.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/monitor.c.i"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src/monitor.c > CMakeFiles/glfw.dir/monitor.c.i
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/monitor.c > CMakeFiles/glfw.dir/monitor.c.i
 
 lib/glfw/src/CMakeFiles/glfw.dir/monitor.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/monitor.c.s"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src/monitor.c -o CMakeFiles/glfw.dir/monitor.c.s
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/monitor.c -o CMakeFiles/glfw.dir/monitor.c.s
 
 lib/glfw/src/CMakeFiles/glfw.dir/window.c.o: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
 lib/glfw/src/CMakeFiles/glfw.dir/window.c.o: ../lib/glfw/src/window.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/window.c.o"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw.dir/window.c.o   -c /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src/window.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/window.c.o"
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw.dir/window.c.o   -c /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/window.c
 
 lib/glfw/src/CMakeFiles/glfw.dir/window.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/window.c.i"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src/window.c > CMakeFiles/glfw.dir/window.c.i
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/window.c > CMakeFiles/glfw.dir/window.c.i
 
 lib/glfw/src/CMakeFiles/glfw.dir/window.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/window.c.s"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src/window.c -o CMakeFiles/glfw.dir/window.c.s
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/window.c -o CMakeFiles/glfw.dir/window.c.s
 
 lib/glfw/src/CMakeFiles/glfw.dir/x11_init.c.o: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
 lib/glfw/src/CMakeFiles/glfw.dir/x11_init.c.o: ../lib/glfw/src/x11_init.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/x11_init.c.o"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw.dir/x11_init.c.o   -c /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src/x11_init.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/x11_init.c.o"
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw.dir/x11_init.c.o   -c /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/x11_init.c
 
 lib/glfw/src/CMakeFiles/glfw.dir/x11_init.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/x11_init.c.i"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src/x11_init.c > CMakeFiles/glfw.dir/x11_init.c.i
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/x11_init.c > CMakeFiles/glfw.dir/x11_init.c.i
 
 lib/glfw/src/CMakeFiles/glfw.dir/x11_init.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/x11_init.c.s"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src/x11_init.c -o CMakeFiles/glfw.dir/x11_init.c.s
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/x11_init.c -o CMakeFiles/glfw.dir/x11_init.c.s
 
 lib/glfw/src/CMakeFiles/glfw.dir/x11_monitor.c.o: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
 lib/glfw/src/CMakeFiles/glfw.dir/x11_monitor.c.o: ../lib/glfw/src/x11_monitor.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/x11_monitor.c.o"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw.dir/x11_monitor.c.o   -c /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src/x11_monitor.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/x11_monitor.c.o"
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw.dir/x11_monitor.c.o   -c /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/x11_monitor.c
 
 lib/glfw/src/CMakeFiles/glfw.dir/x11_monitor.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/x11_monitor.c.i"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src/x11_monitor.c > CMakeFiles/glfw.dir/x11_monitor.c.i
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/x11_monitor.c > CMakeFiles/glfw.dir/x11_monitor.c.i
 
 lib/glfw/src/CMakeFiles/glfw.dir/x11_monitor.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/x11_monitor.c.s"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src/x11_monitor.c -o CMakeFiles/glfw.dir/x11_monitor.c.s
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/x11_monitor.c -o CMakeFiles/glfw.dir/x11_monitor.c.s
 
 lib/glfw/src/CMakeFiles/glfw.dir/x11_window.c.o: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
 lib/glfw/src/CMakeFiles/glfw.dir/x11_window.c.o: ../lib/glfw/src/x11_window.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/x11_window.c.o"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw.dir/x11_window.c.o   -c /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src/x11_window.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/x11_window.c.o"
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw.dir/x11_window.c.o   -c /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/x11_window.c
 
 lib/glfw/src/CMakeFiles/glfw.dir/x11_window.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/x11_window.c.i"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src/x11_window.c > CMakeFiles/glfw.dir/x11_window.c.i
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/x11_window.c > CMakeFiles/glfw.dir/x11_window.c.i
 
 lib/glfw/src/CMakeFiles/glfw.dir/x11_window.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/x11_window.c.s"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src/x11_window.c -o CMakeFiles/glfw.dir/x11_window.c.s
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/x11_window.c -o CMakeFiles/glfw.dir/x11_window.c.s
 
 lib/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
 lib/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o: ../lib/glfw/src/xkb_unicode.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw.dir/xkb_unicode.c.o   -c /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src/xkb_unicode.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o"
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw.dir/xkb_unicode.c.o   -c /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/xkb_unicode.c
 
 lib/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/xkb_unicode.c.i"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src/xkb_unicode.c > CMakeFiles/glfw.dir/xkb_unicode.c.i
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/xkb_unicode.c > CMakeFiles/glfw.dir/xkb_unicode.c.i
 
 lib/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/xkb_unicode.c.s"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src/xkb_unicode.c -o CMakeFiles/glfw.dir/xkb_unicode.c.s
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/xkb_unicode.c -o CMakeFiles/glfw.dir/xkb_unicode.c.s
 
 lib/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
 lib/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o: ../lib/glfw/src/linux_joystick.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw.dir/linux_joystick.c.o   -c /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src/linux_joystick.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o"
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw.dir/linux_joystick.c.o   -c /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/linux_joystick.c
 
 lib/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/linux_joystick.c.i"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src/linux_joystick.c > CMakeFiles/glfw.dir/linux_joystick.c.i
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/linux_joystick.c > CMakeFiles/glfw.dir/linux_joystick.c.i
 
 lib/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/linux_joystick.c.s"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src/linux_joystick.c -o CMakeFiles/glfw.dir/linux_joystick.c.s
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/linux_joystick.c -o CMakeFiles/glfw.dir/linux_joystick.c.s
 
 lib/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
 lib/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o: ../lib/glfw/src/posix_time.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw.dir/posix_time.c.o   -c /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src/posix_time.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o"
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw.dir/posix_time.c.o   -c /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/posix_time.c
 
 lib/glfw/src/CMakeFiles/glfw.dir/posix_time.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/posix_time.c.i"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src/posix_time.c > CMakeFiles/glfw.dir/posix_time.c.i
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/posix_time.c > CMakeFiles/glfw.dir/posix_time.c.i
 
 lib/glfw/src/CMakeFiles/glfw.dir/posix_time.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/posix_time.c.s"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src/posix_time.c -o CMakeFiles/glfw.dir/posix_time.c.s
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/posix_time.c -o CMakeFiles/glfw.dir/posix_time.c.s
 
 lib/glfw/src/CMakeFiles/glfw.dir/posix_tls.c.o: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
 lib/glfw/src/CMakeFiles/glfw.dir/posix_tls.c.o: ../lib/glfw/src/posix_tls.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/posix_tls.c.o"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw.dir/posix_tls.c.o   -c /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src/posix_tls.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/posix_tls.c.o"
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw.dir/posix_tls.c.o   -c /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/posix_tls.c
 
 lib/glfw/src/CMakeFiles/glfw.dir/posix_tls.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/posix_tls.c.i"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src/posix_tls.c > CMakeFiles/glfw.dir/posix_tls.c.i
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/posix_tls.c > CMakeFiles/glfw.dir/posix_tls.c.i
 
 lib/glfw/src/CMakeFiles/glfw.dir/posix_tls.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/posix_tls.c.s"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src/posix_tls.c -o CMakeFiles/glfw.dir/posix_tls.c.s
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/posix_tls.c -o CMakeFiles/glfw.dir/posix_tls.c.s
 
 lib/glfw/src/CMakeFiles/glfw.dir/glx_context.c.o: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
 lib/glfw/src/CMakeFiles/glfw.dir/glx_context.c.o: ../lib/glfw/src/glx_context.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/glx_context.c.o"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw.dir/glx_context.c.o   -c /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src/glx_context.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/glx_context.c.o"
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw.dir/glx_context.c.o   -c /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/glx_context.c
 
 lib/glfw/src/CMakeFiles/glfw.dir/glx_context.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/glx_context.c.i"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src/glx_context.c > CMakeFiles/glfw.dir/glx_context.c.i
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/glx_context.c > CMakeFiles/glfw.dir/glx_context.c.i
 
 lib/glfw/src/CMakeFiles/glfw.dir/glx_context.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/glx_context.c.s"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src/glx_context.c -o CMakeFiles/glfw.dir/glx_context.c.s
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/glx_context.c -o CMakeFiles/glfw.dir/glx_context.c.s
 
 # Object files for target glfw
 glfw_OBJECTS = \
@@ -270,9 +270,9 @@ libglfw.so.3.1: /usr/lib/x86_64-linux-gnu/libXxf86vm.so
 libglfw.so.3.1: /usr/lib/x86_64-linux-gnu/libXcursor.so
 libglfw.so.3.1: /usr/lib/x86_64-linux-gnu/libGL.so
 libglfw.so.3.1: lib/glfw/src/CMakeFiles/glfw.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking C shared library ../../../libglfw.so"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glfw.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && $(CMAKE_COMMAND) -E cmake_symlink_library ../../../libglfw.so.3.1 ../../../libglfw.so.3 ../../../libglfw.so
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking C shared library ../../../libglfw.so"
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glfw.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && $(CMAKE_COMMAND) -E cmake_symlink_library ../../../libglfw.so.3.1 ../../../libglfw.so.3 ../../../libglfw.so
 
 libglfw.so.3: libglfw.so.3.1
 	@$(CMAKE_COMMAND) -E touch_nocreate libglfw.so.3
@@ -286,10 +286,10 @@ lib/glfw/src/CMakeFiles/glfw.dir/build: libglfw.so
 .PHONY : lib/glfw/src/CMakeFiles/glfw.dir/build
 
 lib/glfw/src/CMakeFiles/glfw.dir/clean:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src && $(CMAKE_COMMAND) -P CMakeFiles/glfw.dir/cmake_clean.cmake
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src && $(CMAKE_COMMAND) -P CMakeFiles/glfw.dir/cmake_clean.cmake
 .PHONY : lib/glfw/src/CMakeFiles/glfw.dir/clean
 
 lib/glfw/src/CMakeFiles/glfw.dir/depend:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5 /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : lib/glfw/src/CMakeFiles/glfw.dir/depend
 

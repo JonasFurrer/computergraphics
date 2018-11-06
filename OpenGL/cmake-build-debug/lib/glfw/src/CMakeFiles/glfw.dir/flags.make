@@ -6,5 +6,5 @@ C_FLAGS = -g -fPIC   -Wall -fvisibility=hidden
 
 C_DEFINES = -D_GLFW_USE_CONFIG_H -Dglfw_EXPORTS
 
-C_INCLUDES = -I/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/include -I/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/lib/glfw/src -I/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/src 
+C_INCLUDES = -I/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/include -I/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src -I/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src 
 

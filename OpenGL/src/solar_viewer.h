@@ -74,8 +74,6 @@ protected:
 
     void randomize_planets();
 
-    void draw_planet(mat4& _projection, mat4& _view, Planet& _planet);
-
 private:
 
     /// sphere object

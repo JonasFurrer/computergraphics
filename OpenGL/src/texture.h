@@ -23,6 +23,11 @@ public:
     /// default constructor
     Texture();
 
+    // Texture objects may not be assigned or copied, or both copies will
+    // believe they own the OpenGL texture exclusively.
+    Texture(const Texture&) = delete;
+    Texture& operator=(const Texture&) = delete;
+
     /// default destructor
     ~Texture();
 

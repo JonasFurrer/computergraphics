@@ -48,10 +48,10 @@ RM = /home/alessandro/clion-2018.2.5/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5
+CMAKE_SOURCE_DIR = /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug
+CMAKE_BINARY_DIR = /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/CMakeFiles /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/lib/glfw/CMakeFiles/progress.marks
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/glfw/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug/CMakeFiles 0
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/CMakeFiles /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/CMakeFiles/progress.marks
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/glfw/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/glfw/clean
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/glfw/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,17 +97,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/glfw/preinstall
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/glfw/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/glfw/preinstall
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/glfw/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -129,6 +129,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

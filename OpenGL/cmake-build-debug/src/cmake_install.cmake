@@ -1,4 +1,4 @@
-# Install script for directory: /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/assignment_5/src
+# Install script for directory: /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

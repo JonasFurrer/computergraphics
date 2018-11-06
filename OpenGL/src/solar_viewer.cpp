@@ -12,35 +12,34 @@
 #include <stdlib.h>     /* srand, rand */
 #include <time.h>       /* time */
 #include <array>
-#include <list>
 
 //=============================================================================
 
 
 Solar_viewer::Solar_viewer(const char* _title, int _width, int _height)
-        : GLFW_window(_title, _width, _height),
-          unit_sphere_(50), //level of tesselation
+    : GLFW_window(_title, _width, _height),
+      unit_sphere_(50), //level of tesselation
 
-        /** Use the following for better planet distances/sizes (but still not realistic)
-        * To get a true-to-scale solar system, planets would be 20x smaller, and their distance to the sun would be ~11x larger
-        * For example r_mercury/r_sun = 0.0034 and distance_mercury_to_sun/r_sun = 33.3
-        **/
-        //  sun_    (0.0f,              2.0f*(float)(M_PI)/26.0f,   1.0f,    0.0f),
-        //  mercury_(2.0f*(float)(M_PI)/116.0f,  2.0f*(float)(M_PI)/58.5f,   0.068f, -3.1f),
-        //  venus_  (2.0f*(float)(M_PI)/225.0f,  2.0f*(float)(M_PI)/243.0f,  0.174f,   -7.2f),
-        //  earth_  (2.0f*(float)(M_PI)/365.0f,  2.0f*(float)(M_PI),        0.182f,   -9.8f),
-        //  moon_   (2.0f*(float)(M_PI)/27.0f,   0.0f,  0.048f,   -0.5f),
-        //  mars_   (2.0f*(float)(M_PI)/687.0f,  2.0f*(float)(M_PI)*24.0f/25.0f, 0.098f,-13.8f),
-        //  stars_  (0.0f, 0.0f, 30.0f, 0.0f)
+      /** Use the following for better planet distances/sizes (but still not realistic)
+      * To get a true-to-scale solar system, planets would be 20x smaller, and their distance to the sun would be ~11x larger
+      * For example r_mercury/r_sun = 0.0034 and distance_mercury_to_sun/r_sun = 33.3
+      **/
+      //  sun_    (0.0f,              2.0f*(float)(M_PI)/26.0f,   1.0f,    0.0f),
+      //  mercury_(2.0f*(float)(M_PI)/116.0f,  2.0f*(float)(M_PI)/58.5f,   0.068f, -3.1f),
+      //  venus_  (2.0f*(float)(M_PI)/225.0f,  2.0f*(float)(M_PI)/243.0f,  0.174f,   -7.2f),
+      //  earth_  (2.0f*(float)(M_PI)/365.0f,  2.0f*(float)(M_PI),        0.182f,   -9.8f),
+      //  moon_   (2.0f*(float)(M_PI)/27.0f,   0.0f,  0.048f,   -0.5f),
+      //  mars_   (2.0f*(float)(M_PI)/687.0f,  2.0f*(float)(M_PI)*24.0f/25.0f, 0.098f,-13.8f),
+      //  stars_  (0.0f, 0.0f, 30.0f, 0.0f)
 
-        // Even more unrealistic placement/sizing for nicer visualization.
-          sun_    (0.0,              2.0*M_PI/26.0,   1.0f,    0.0f),
-          mercury_(2.0*M_PI/116.0f,  2.0*M_PI/58.5,   0.075f, -1.4f),
-          venus_  (2.0*M_PI/225.0f,  2.0*M_PI/243.0,  0.2f,   -2.2f),
-          earth_  (2.0*M_PI/365.0f,  2.0*M_PI,        0.25,   -3.3f),
-          moon_   (2.0*M_PI/27.0f,   0.0,  0.04,   -0.4f),
-          mars_   (2.0*M_PI/687.0f,  2.0*M_PI*24.0/25.0, 0.15,-5.0f),
-          stars_  (0.0, 0.0, 21.0, 0.0)
+      // Even more unrealistic placement/sizing for nicer visualization.
+      sun_    (0.0,              2.0*M_PI/26.0,   1.0f,    0.0f),
+      mercury_(2.0*M_PI/116.0f,  2.0*M_PI/58.5,   0.075f, -1.4f),
+      venus_  (2.0*M_PI/225.0f,  2.0*M_PI/243.0,  0.2f,   -2.2f),
+      earth_  (2.0*M_PI/365.0f,  2.0*M_PI,        0.25,   -3.3f),
+      moon_   (2.0*M_PI/27.0f,   0.0,  0.04,   -0.4f),
+      mars_   (2.0*M_PI/687.0f,  2.0*M_PI*24.0/25.0, 0.15,-5.0f),
+      stars_  (0.0, 0.0, 21.0, 0.0)
 {
     // start animation
     timer_active_ = true;
@@ -84,22 +83,22 @@ keyboard(int key, int scancode, int action, int mods)
             // Key 7 switches to viewing the ship.
             case GLFW_KEY_7:
             {
-                in_ship_ = true;
                 planet_to_look_at_ = NULL;
-                break;
-            }
-
-            case GLFW_KEY_8:
-            {
-                if(dist_factor_ > 3)
-                    dist_factor_ = dist_factor_-0.5;
+                in_ship_ = true;
                 break;
             }
 
             case GLFW_KEY_9:
             {
-                if(dist_factor_ < 19.5)
-                    dist_factor_ = dist_factor_+0.5;
+                dist_factor_ += 0.1f;
+                dist_factor_ = std::min(dist_factor_,20.0f);
+                break;
+            }
+
+            case GLFW_KEY_8:
+            {
+                dist_factor_ -= 0.1f;
+                dist_factor_ = std::max(dist_factor_,2.5f);
                 break;
             }
 
@@ -209,23 +208,15 @@ keyboard(int key, int scancode, int action, int mods)
 // around their orbits. This position is needed to set up the camera in the scene
 // (see Solar_viewer::paint)
 void Solar_viewer::update_body_positions() {
-    mercury_.pos_ = vec4(cos(mercury_.angle_orbit_)*mercury_.distance_, 0, sin(mercury_.angle_orbit_)*mercury_.distance_, 1);
-    venus_.pos_ = vec4(cos(venus_.angle_orbit_)*venus_.distance_, 0, sin(venus_.angle_orbit_)*venus_.distance_, 1);
-    earth_.pos_ = vec4(cos(earth_.angle_orbit_)*earth_.distance_, 0, sin(earth_.angle_orbit_)*earth_.distance_, 1);
-    mars_.pos_ = vec4(cos(mars_.angle_orbit_)*mars_.distance_, 0, sin(mars_.angle_orbit_)*mars_.distance_, 1);
-    moon_.pos_ = vec4(cos(earth_.angle_orbit_)*earth_.distance_+cos(moon_.angle_orbit_)*moon_.distance_, 0, sin(earth_.angle_orbit_)*earth_.distance_+sin(moon_.angle_orbit_)*moon_.distance_, 1);
+    std::array<Planet *, 4> planets = { &mercury_, &venus_, &earth_, &mars_};
+    for (Planet *p : planets)
+        p->pos_ = mat4::rotate_y(p->angle_orbit_) * vec4(p->distance_, 0, 0, 1);
 
-    ship_.pos_ = ship_.pos_+ ship_.direction_ * ship_.speed_; //vec4(ship_.direction_.x*(ship_.speed_),ship_.direction_.y,ship_.direction_.z*(ship_.speed_), 1);
-
-    /** \todo Update the position of the planets based on their distance o their orbit's center
-     * and their angular displacement around the orbit. Planets should follow a circular
-     * orbit in the x-z plane, moving in a clockwise direction around the
-     * positive y axis. "angle_orbit_ = 0" should correspond to a position on the x axis.
-     * Note: planets will orbit around the sun, which is always positioned at the origin,
-     *       but the moon orbits around the earth! Only visualize mercury, venus, earth, mars,
-     *       and earth's moon. Do not explicitly place the space ship, its position
-     *       is fixed for now.
-     * */
+    // translate by negative distance so that an approximately correct
+    // side of the moon faces earth:
+    moon_.pos_ = mat4::translate(earth_.pos_) * (
+                mat4::rotate_y(moon_.angle_orbit_) *
+                vec4(-moon_.distance_, 0, 0, 1));
 }
 
 //-----------------------------------------------------------------------------
@@ -315,7 +306,7 @@ void Solar_viewer::initialize()
     color_shader_.load(SHADER_PATH "/color.vert", SHADER_PATH "/color.frag");
     phong_shader_.load(SHADER_PATH "/phong.vert", SHADER_PATH "/phong.frag");
     earth_shader_.load(SHADER_PATH "/earth.vert", SHADER_PATH "/earth.frag");
-    sun_shader_.load(SHADER_PATH   "/sun.vert", SHADER_PATH   "/sun.frag");
+      sun_shader_.load(SHADER_PATH   "/sun.vert", SHADER_PATH   "/sun.frag");
 
     solid_color_shader_.load(SHADER_PATH "/solid_color.vert", SHADER_PATH "/solid_color.frag");
 
@@ -334,53 +325,56 @@ void Solar_viewer::paint()
 {
     // clear framebuffer and depth buffer first
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
-    /** \todo Implement navigation through the solar system.
-     *   - Allow camera rotation by modifying the view matrix.
-     *     `x_angle_` and `y_angle` hold the necessary information and are
-     *     updated by key presses (see `Solar_viewer::keyboard(...)`).
-     *   - Position the camera at distance `dist_factor_` from the planet's center (in units of planet radii).
-     *     This distance should be controlled by keys 8 and 9.
-     *   - When keys `1` to `6` are pressed, the camera should move to look at
-     *     the corresponding celestial body (this functionality is already provided,
-     *     see `Solar_viewer::keyboard(...)`).
-     *   - Pointer `planet_to_look_at_` stores the current body to view.
-     *   - When you are in spaceship mode (member in_ship_), the camera shoul98d
-     *     hover slightly behind and above the ship and rotate along with it (so that
-     *     when the ship moves and turns it always remains stationary in view
-     *     while the solar system moves and spins around it).
-     *
-     *  Hint: planet centers are stored in "Planet::pos_".
-     */
-    // For now, view the selected planet from a fixed position...
-    if(!in_ship_){
-        vec4  center = planet_to_look_at_->pos_;
-        vec4      up = vec4(0,1,0,0);
+    vec4 eye, center, up;
+
+    if (in_ship_)
+    {
+        // - We use a hard-coded multiple of the ship radius, since using the ship's radius
+        //   directly places us too close
+        float radius = 5.0f * ship_.radius_;
+        // - The vector pointing from the ship's rear to its front is given by a
+        //   rotation of (0, 0, 1) around the y axis by ship_.angle_. To move the
+        //   eye behind the ship, we need to offset in the -z direction;
+        // - To position the camera slightly above the ship, we first rotate
+        //   (0, 0, -1) ccw around the x axis (producing a positive y
+        //   offset). This rotation must happen before the rotation by ship_.angle_
+        //   (otherwise rotating the ship will cause the camera to wobble),
+        //   which is why we can't just use ship.direction_.
+        center = vec4(ship_.pos_, 1);
+        // add the ship angle to the rotation so the viewing angle stays constant w.r.t. the ship
+        mat4 rot = mat4::rotate_y(y_angle_ + ship_.angle_) * mat4::rotate_x(15.0f);
+        eye = center + rot * vec4(0, 0, - dist_factor_ * radius, 0);
+        up  = rot * vec4(0, 1, 0, 0);
+    } else // not in ship
+    {
+        center = planet_to_look_at_->pos_;
+        mat4 rot = mat4::rotate_y(y_angle_) * mat4::rotate_x(x_angle_);
         float radius = planet_to_look_at_->radius_;
-        vec4     eye = vec4(center.x + (sin(deg2rad(y_angle_))*dist_factor_*radius), center.y - cos(deg2rad(x_angle_)), center.z + cos(deg2rad(y_angle_))*dist_factor_*radius, 0);
-        mat4    view = mat4::look_at(vec3(eye), vec3(center), vec3(up));
-
-        billboard_x_angle_ = billboard_y_angle_ = 0.0f;
-
-        mat4 projection = mat4::perspective(fovy_, (float)width_/(float)height_, near_, far_);
-        draw_scene(projection, view);
-    } else {
-        vec4 center = ship_.pos_;
-        vec4      up = vec4(0,1, 0,0);
-        float radius = ship_.radius_;
-        vec4     eye = vec4(center.x-0.1*ship_.direction_.x, center.y+0.01f+0.01f*sin(deg2rad(y_angle_)), center.z-0.1f*ship_.direction_.z, 0);
-        mat4    view = mat4::look_at(vec3(eye), vec3(center), vec3(up));
-
-        billboard_x_angle_ = billboard_y_angle_ = 0.0f;
-
-        mat4 projection = mat4::perspective(fovy_, (float)width_/(float)height_, near_, far_);
-        draw_scene(projection, view);
+        eye = center + rot * vec4(0, 0, (dist_factor_ * radius), 0);
+        up = rot * vec4(0, 1, 0, 0);
     }
+
+    mat4 view = mat4::look_at(vec3(eye), vec3(center), vec3(up));
+
+
+    /** \todo Orient the billboard used to display the sun's glow
+     *  Update billboard_x_andle_ and billboard_y_angle_ so that the billboard plane
+     *  drawn to produce the sun's halo is orthogonal to the view vector for
+     *  the sun's center.
+     */
+
+    billboard_x_angle_ = billboard_y_angle_ = 0.0f;
+
+    mat4 projection = mat4::perspective(fovy_, (float)width_/(float)height_, near_, far_);
+    draw_scene(projection, view);
+
 }
 
 
 //-----------------------------------------------------------------------------
-
 
 void Solar_viewer::draw_scene(mat4& _projection, mat4& _view)
 {
@@ -428,65 +422,70 @@ void Solar_viewer::draw_scene(mat4& _projection, mat4& _view)
     sun_.tex_.bind();
     unit_sphere_.draw();
 
+    auto draw_planet = [&,this](Planet &planet)
+    {
+        mat4 m_matrix = mat4::translate(planet.pos_) *
+                mat4::scale(planet.radius_) *
+                mat4::rotate_y(planet.angle_self_);
+        mat4 mv_matrix  = _view * m_matrix;
+        mat4 mvp_matrix = _projection * mv_matrix;
+        color_shader_.use();
+        color_shader_.set_uniform("modelview_projection_matrix", mvp_matrix);
+        color_shader_.set_uniform("tex",0);
+        color_shader_.set_uniform("greyscale", static_cast<int>(greyscale_));
+        planet.tex_.bind();
+        unit_sphere_.draw();
+    };
 
-    // render planets
-    draw_planet(_projection, _view, stars_); // background
-    draw_planet(_projection, _view, mercury_);
-    draw_planet(_projection, _view, venus_);
-    draw_planet(_projection, _view, earth_);
-    draw_planet(_projection, _view, mars_);
-    draw_planet(_projection, _view, moon_);
+    draw_planet(stars_);
 
-    // render ship
-    m_matrix = mat4::translate(ship_.pos_) * mat4::rotate_y(ship_.angle_) * mat4::scale(ship_.radius_);
+
+    draw_planet(mercury_);
+    draw_planet(venus_);
+    draw_planet(moon_);
+    draw_planet(mars_);
+    draw_planet(earth_);
+
+    // ship
+    m_matrix = mat4::translate(ship_.pos_)*mat4::rotate_y(ship_.angle_)*mat4::scale(ship_.radius_);
     mv_matrix = _view * m_matrix;
     mvp_matrix = _projection * mv_matrix;
     color_shader_.use();
     color_shader_.set_uniform("modelview_projection_matrix", mvp_matrix);
-    color_shader_.set_uniform("t", sun_animation_time, true /* Indicate that time parameter is optional;
-                                                             it may be optimized away by the GLSL    compiler if it's unused. */);
-    color_shader_.set_uniform("tex", 0);
-    color_shader_.set_uniform("greyscale", (int)greyscale_);
+    color_shader_.set_uniform("tex",0);
+    color_shader_.set_uniform("greyscale", static_cast<int>(greyscale_));
     ship_.tex_.bind();
     ship_.draw();
 
-    /** \todo Render the star background, the spaceship, and the rest of the celestial bodies.
-     *  For now, everything should be rendered with the color_shader_,
-     *  which expects uniforms "modelview_projection_matrix", "tex" and "grayscale"
-     *  and a single bound texture.
-     *
-     *  For each object, first compute the model matrix
-     *  (similarly to what you did in function update_body_positions()), model-view
-     *  matrix (use already computed _view) and model-view-projection matrix (use
-     *  already computed _projection).
-     *
-     *  Then set up the shader. Make use of the use() function defined in shader.cpp to
-     *  specify the handle of the shader program and set the uniform variables expected by
-     *  the shader.
-     *
-     *  Finally, bind the the texture (such that the sphere would be rendered with given
-     *  texture) and draw the sphere.
-     *
-     *  Hint: See how it is done for the Sun in the code above.
-     */
 
-    // check for OpenGL errors
-    glCheckError();
-}
+    /** \todo Switch from using color_shader_ to the fancier shaders you'll
+   * implement in this assignment:
+   *      mercury, venus, moon, mars, ship: phong_shader_
+   *      earth: earth_shader_
+   *      stars, sunglow: still use color_shader_
+   *  You'll need to make sure all the GLSL uniform variables are set. For
+   *  Phong shading, you need to pass in the modelview matrix, the normal transformation
+   *  matrix, and light position in addition to the color_shader_ parameters.
+   */
 
-void Solar_viewer::draw_planet(mat4& _projection, mat4& _view, Planet& _planet) {
-    mat4 m_matrix, mv_matrix, mvp_matrix;
-
-    m_matrix = mat4::translate(_planet.pos_) * mat4::rotate_y(_planet.angle_self_) * mat4::scale(_planet.radius_);
+    /** \todo Render the sun's halo here using the "color_shader_"
+    *   - Construct a model matrix that scales the billboard to 3 times the
+    *     sun's radius and orients it according to billboard_x_angle_ and
+    *     billboard_y_angle_
+    *   - Bind the texture for and draw sunglow_
+    **/
+    m_matrix = mat4::rotate_y(sun_.angle_self_) *mat4::scale(sun_.radius_*3);
     mv_matrix = _view * m_matrix;
     mvp_matrix = _projection * mv_matrix;
-
     color_shader_.use();
     color_shader_.set_uniform("modelview_projection_matrix", mvp_matrix);
     color_shader_.set_uniform("tex", 0);
     color_shader_.set_uniform("greyscale", (int)greyscale_);
-    _planet.tex_.bind();
-    unit_sphere_.draw();
+    sunglow_.tex_.bind();
+    sunglow_.draw();
+
+    // check for OpenGL errors
+    glCheckError();
 }
 
 void Solar_viewer::randomize_planets()
