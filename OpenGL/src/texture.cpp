@@ -117,7 +117,7 @@ bool Texture::createSunBillboardTexture()
             img[(row * width + col) * 4 + 1] = 90; // G
             img[(row * width + col) * 4 + 2] = 40; // B
 
-            double norm = std::sqrt(std::pow((width/2)-row,2) + std::pow((height/2) -col,2));
+            double norm = std::sqrt(std::pow((width/2)-row,2) + std::pow((height/2)-col,2));
 
             if( norm <= 150){
                 img[(row +height/2 * width + col + width/2) * 4 + 3] = 0; // A

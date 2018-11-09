@@ -5,102 +5,47 @@
 		<Option title="SolarSystem"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\lib\;CMake Files\lib\glfw\;CMake Files\lib\glfw\src\;CMake Files\lib\lodePNG\;CMake Files\src\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\glfw3\;CMake Files\lib\;CMake Files\lib\lodePNG\;CMake Files\src\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug"/>
+				<Option working_dir="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug"/>
+				<Option working_dir="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug"/>
+				<Option working_dir="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="glfw">
-				<Option output="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/libglfw.so" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src"/>
-				<Option object_output="./"/>
-				<Option type="3"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add option="-D_GLFW_USE_CONFIG_H"/>
-					<Add directory="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/include"/>
-					<Add directory="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src"/>
-					<Add directory="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src/Makefile&quot;  VERBOSE=1 glfw"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="glfw/fast">
-				<Option output="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/libglfw.so" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src"/>
-				<Option object_output="./"/>
-				<Option type="3"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add option="-D_GLFW_USE_CONFIG_H"/>
-					<Add directory="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/include"/>
-					<Add directory="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src"/>
-					<Add directory="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src/Makefile&quot;  VERBOSE=1 glfw/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="lodePNG">
-				<Option output="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/liblodePNG.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/lodePNG"/>
+				<Option output="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/liblodePNG.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/lib/lodePNG"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/include"/>
-					<Add directory="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src"/>
-					<Add directory="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/lodePNG"/>
+					<Add directory="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src"/>
+					<Add directory="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/lib/lodePNG"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -111,22 +56,21 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/lodePNG/Makefile&quot;  VERBOSE=1 lodePNG"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/lodePNG/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/lodePNG/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/lodePNG/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/lib/lodePNG/Makefile&quot;  VERBOSE=1 lodePNG"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/lib/lodePNG/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/lib/lodePNG/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/lib/lodePNG/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="lodePNG/fast">
-				<Option output="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/liblodePNG.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/lodePNG"/>
+				<Option output="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/liblodePNG.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/lib/lodePNG"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/include"/>
-					<Add directory="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src"/>
-					<Add directory="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/lodePNG"/>
+					<Add directory="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src"/>
+					<Add directory="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/lib/lodePNG"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -137,25 +81,25 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/lodePNG/Makefile&quot;  VERBOSE=1 lodePNG/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/lodePNG/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/lodePNG/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/lodePNG/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/lib/lodePNG/Makefile&quot;  VERBOSE=1 lodePNG/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/lib/lodePNG/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/lib/lodePNG/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/lib/lodePNG/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="SolarSystem">
-				<Option output="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/SolarSystem" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug"/>
+				<Option output="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/SolarSystem" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DGLEW_STATIC"/>
-					<Add option="-DTEXTURE_PATH=&quot;/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/textures&quot;"/>
-					<Add option="-DSHADER_PATH=&quot;/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src&quot;"/>
-					<Add directory="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/include"/>
-					<Add directory="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src"/>
-					<Add directory="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/lodePNG"/>
+					<Add option="-DTEXTURE_PATH=&quot;/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/textures&quot;"/>
+					<Add option="-DSHADER_PATH=&quot;/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src&quot;"/>
+					<Add option="-DGLFW_DLL"/>
+					<Add directory="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src"/>
+					<Add directory="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/lib/lodePNG"/>
 					<Add directory="/usr/include/GL"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
@@ -167,25 +111,25 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 SolarSystem"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 SolarSystem"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="SolarSystem/fast">
-				<Option output="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/SolarSystem" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug"/>
+				<Option output="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/SolarSystem" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DGLEW_STATIC"/>
-					<Add option="-DTEXTURE_PATH=&quot;/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/textures&quot;"/>
-					<Add option="-DSHADER_PATH=&quot;/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src&quot;"/>
-					<Add directory="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/include"/>
-					<Add directory="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src"/>
-					<Add directory="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/lodePNG"/>
+					<Add option="-DTEXTURE_PATH=&quot;/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/textures&quot;"/>
+					<Add option="-DSHADER_PATH=&quot;/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src&quot;"/>
+					<Add option="-DGLFW_DLL"/>
+					<Add directory="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src"/>
+					<Add directory="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/lib/lodePNG"/>
 					<Add directory="/usr/include/GL"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
@@ -197,179 +141,107 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 SolarSystem/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 SolarSystem/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/src/glfw_config.h">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/include/GLFW/glfw3.h">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/include/GLFW/glfw3native.h">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/context.c">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/glx_context.c">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/glx_context.h">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/init.c">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/input.c">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/internal.h">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/linux_joystick.c">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/linux_joystick.h">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/monitor.c">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/posix_time.c">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/posix_time.h">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/posix_tls.c">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/posix_tls.h">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/window.c">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/x11_init.c">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/x11_monitor.c">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/x11_platform.h">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/x11_window.c">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/xkb_unicode.c">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/xkb_unicode.h">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/lodePNG/lodepng.cpp">
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/lib/lodePNG/lodepng.cpp">
 			<Option target="lodePNG"/>
 		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/lodePNG/lodepng.h">
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/lib/lodePNG/lodepng.h">
 			<Option target="lodePNG"/>
 		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/bezier.cpp">
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/bezier.cpp">
 			<Option target="SolarSystem"/>
 		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/bezier.h">
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/bezier.h">
 			<Option target="SolarSystem"/>
 		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/billboard.cpp">
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/billboard.cpp">
 			<Option target="SolarSystem"/>
 		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/billboard.h">
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/billboard.h">
 			<Option target="SolarSystem"/>
 		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/frame.h">
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/frame.h">
 			<Option target="SolarSystem"/>
 		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/gl.h">
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/gl.h">
 			<Option target="SolarSystem"/>
 		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/glfw_window.cpp">
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/glfw_window.cpp">
 			<Option target="SolarSystem"/>
 		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/glfw_window.h">
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/glfw_window.h">
 			<Option target="SolarSystem"/>
 		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/glmath.cpp">
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/glmath.cpp">
 			<Option target="SolarSystem"/>
 		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/glmath.h">
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/glmath.h">
 			<Option target="SolarSystem"/>
 		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/main.cpp">
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/main.cpp">
 			<Option target="SolarSystem"/>
 		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/path.h">
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/path.h">
 			<Option target="SolarSystem"/>
 		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/planet.h">
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/planet.h">
 			<Option target="SolarSystem"/>
 		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/shader.cpp">
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/shader.cpp">
 			<Option target="SolarSystem"/>
 		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/shader.h">
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/shader.h">
 			<Option target="SolarSystem"/>
 		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/ship.cpp">
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/ship.cpp">
 			<Option target="SolarSystem"/>
 		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/ship.h">
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/ship.h">
 			<Option target="SolarSystem"/>
 		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/solar_viewer.cpp">
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/solar_viewer.cpp">
 			<Option target="SolarSystem"/>
 		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/solar_viewer.h">
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/solar_viewer.h">
 			<Option target="SolarSystem"/>
 		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/sphere.cpp">
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/sphere.cpp">
 			<Option target="SolarSystem"/>
 		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/sphere.h">
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/sphere.h">
 			<Option target="SolarSystem"/>
 		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/texture.cpp">
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/texture.cpp">
 			<Option target="SolarSystem"/>
 		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/texture.h">
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/texture.h">
 			<Option target="SolarSystem"/>
 		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/CMakeLists.txt">
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\lib\glfw\"/>
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/glfw3/glfw3Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\glfw3\"/>
 		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\lib\glfw\src\"/>
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/glfw3/glfw3ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\glfw3\"/>
 		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/glfw3.pc.in">
-			<Option virtualFolder="CMake Files\lib\glfw\src\"/>
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/glfw3/glfw3Targets-none.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\glfw3\"/>
 		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/glfw3Config.cmake.in">
-			<Option virtualFolder="CMake Files\lib\glfw\src\"/>
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/glfw3/glfw3Targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\glfw3\"/>
 		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/src/glfw_config.h.in">
-			<Option virtualFolder="CMake Files\lib\glfw\src\"/>
-		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/lodePNG/CMakeLists.txt">
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/lib/lodePNG/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\lodePNG\"/>
 		</Unit>
-		<Unit filename="/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/CMakeLists.txt">
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\src\"/>
 		</Unit>
 	</Project>

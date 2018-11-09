@@ -11,7 +11,6 @@ src/CMakeFiles/SolarSystem.dir/billboard.cpp.o: ../src/gl.h
 src/CMakeFiles/SolarSystem.dir/billboard.cpp.o: ../src/texture.h
 src/CMakeFiles/SolarSystem.dir/billboard.cpp.o: /usr/include/GL/glew.h
 
-src/CMakeFiles/SolarSystem.dir/glfw_window.cpp.o: ../lib/glfw/include/GLFW/glfw3.h
 src/CMakeFiles/SolarSystem.dir/glfw_window.cpp.o: ../src/gl.h
 src/CMakeFiles/SolarSystem.dir/glfw_window.cpp.o: ../src/glfw_window.cpp
 src/CMakeFiles/SolarSystem.dir/glfw_window.cpp.o: ../src/glfw_window.h
@@ -20,7 +19,6 @@ src/CMakeFiles/SolarSystem.dir/glfw_window.cpp.o: /usr/include/GL/glew.h
 src/CMakeFiles/SolarSystem.dir/glmath.cpp.o: ../src/glmath.cpp
 src/CMakeFiles/SolarSystem.dir/glmath.cpp.o: ../src/glmath.h
 
-src/CMakeFiles/SolarSystem.dir/main.cpp.o: ../lib/glfw/include/GLFW/glfw3.h
 src/CMakeFiles/SolarSystem.dir/main.cpp.o: ../src/bezier.h
 src/CMakeFiles/SolarSystem.dir/main.cpp.o: ../src/billboard.h
 src/CMakeFiles/SolarSystem.dir/main.cpp.o: ../src/frame.h
@@ -50,7 +48,6 @@ src/CMakeFiles/SolarSystem.dir/ship.cpp.o: ../src/ship.h
 src/CMakeFiles/SolarSystem.dir/ship.cpp.o: ../src/texture.h
 src/CMakeFiles/SolarSystem.dir/ship.cpp.o: /usr/include/GL/glew.h
 
-src/CMakeFiles/SolarSystem.dir/solar_viewer.cpp.o: ../lib/glfw/include/GLFW/glfw3.h
 src/CMakeFiles/SolarSystem.dir/solar_viewer.cpp.o: ../src/bezier.h
 src/CMakeFiles/SolarSystem.dir/solar_viewer.cpp.o: ../src/billboard.h
 src/CMakeFiles/SolarSystem.dir/solar_viewer.cpp.o: ../src/frame.h

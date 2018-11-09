@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/alessandro/clion-2018.2.5/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/jones/Documents/clion-2018.2.5/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/alessandro/clion-2018.2.5/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/jones/Documents/clion-2018.2.5/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL
+CMAKE_SOURCE_DIR = /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug
+CMAKE_BINARY_DIR = /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/alessandro/Dokumente/Übungen/computergrafik/computergr
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/alessandro/clion-2018.2.5/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/jones/Documents/clion-2018.2.5/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/alessandro/clion-2018.2.5/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/jones/Documents/clion-2018.2.5/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/CMakeFiles /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src/CMakeFiles/progress.marks
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/CMakeFiles 0
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/CMakeFiles /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src/CMakeFiles/progress.marks
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/SolarSystem.dir/rule:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/SolarSystem.dir/rule
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/SolarSystem.dir/rule
 .PHONY : src/CMakeFiles/SolarSystem.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ SolarSystem: src/CMakeFiles/SolarSystem.dir/rule
 
 # fast build rule for target.
 SolarSystem/fast:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/build
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/build
 .PHONY : SolarSystem/fast
 
 bezier.o: bezier.cpp.o
@@ -131,7 +131,7 @@ bezier.o: bezier.cpp.o
 
 # target to build an object file
 bezier.cpp.o:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/bezier.cpp.o
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/bezier.cpp.o
 .PHONY : bezier.cpp.o
 
 bezier.i: bezier.cpp.i
@@ -140,7 +140,7 @@ bezier.i: bezier.cpp.i
 
 # target to preprocess a source file
 bezier.cpp.i:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/bezier.cpp.i
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/bezier.cpp.i
 .PHONY : bezier.cpp.i
 
 bezier.s: bezier.cpp.s
@@ -149,7 +149,7 @@ bezier.s: bezier.cpp.s
 
 # target to generate assembly for a file
 bezier.cpp.s:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/bezier.cpp.s
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/bezier.cpp.s
 .PHONY : bezier.cpp.s
 
 billboard.o: billboard.cpp.o
@@ -158,7 +158,7 @@ billboard.o: billboard.cpp.o
 
 # target to build an object file
 billboard.cpp.o:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/billboard.cpp.o
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/billboard.cpp.o
 .PHONY : billboard.cpp.o
 
 billboard.i: billboard.cpp.i
@@ -167,7 +167,7 @@ billboard.i: billboard.cpp.i
 
 # target to preprocess a source file
 billboard.cpp.i:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/billboard.cpp.i
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/billboard.cpp.i
 .PHONY : billboard.cpp.i
 
 billboard.s: billboard.cpp.s
@@ -176,7 +176,7 @@ billboard.s: billboard.cpp.s
 
 # target to generate assembly for a file
 billboard.cpp.s:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/billboard.cpp.s
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/billboard.cpp.s
 .PHONY : billboard.cpp.s
 
 glfw_window.o: glfw_window.cpp.o
@@ -185,7 +185,7 @@ glfw_window.o: glfw_window.cpp.o
 
 # target to build an object file
 glfw_window.cpp.o:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/glfw_window.cpp.o
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/glfw_window.cpp.o
 .PHONY : glfw_window.cpp.o
 
 glfw_window.i: glfw_window.cpp.i
@@ -194,7 +194,7 @@ glfw_window.i: glfw_window.cpp.i
 
 # target to preprocess a source file
 glfw_window.cpp.i:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/glfw_window.cpp.i
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/glfw_window.cpp.i
 .PHONY : glfw_window.cpp.i
 
 glfw_window.s: glfw_window.cpp.s
@@ -203,7 +203,7 @@ glfw_window.s: glfw_window.cpp.s
 
 # target to generate assembly for a file
 glfw_window.cpp.s:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/glfw_window.cpp.s
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/glfw_window.cpp.s
 .PHONY : glfw_window.cpp.s
 
 glmath.o: glmath.cpp.o
@@ -212,7 +212,7 @@ glmath.o: glmath.cpp.o
 
 # target to build an object file
 glmath.cpp.o:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/glmath.cpp.o
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/glmath.cpp.o
 .PHONY : glmath.cpp.o
 
 glmath.i: glmath.cpp.i
@@ -221,7 +221,7 @@ glmath.i: glmath.cpp.i
 
 # target to preprocess a source file
 glmath.cpp.i:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/glmath.cpp.i
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/glmath.cpp.i
 .PHONY : glmath.cpp.i
 
 glmath.s: glmath.cpp.s
@@ -230,7 +230,7 @@ glmath.s: glmath.cpp.s
 
 # target to generate assembly for a file
 glmath.cpp.s:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/glmath.cpp.s
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/glmath.cpp.s
 .PHONY : glmath.cpp.s
 
 main.o: main.cpp.o
@@ -239,7 +239,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/main.cpp.o
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -248,7 +248,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/main.cpp.i
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -257,7 +257,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/main.cpp.s
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 shader.o: shader.cpp.o
@@ -266,7 +266,7 @@ shader.o: shader.cpp.o
 
 # target to build an object file
 shader.cpp.o:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/shader.cpp.o
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/shader.cpp.o
 .PHONY : shader.cpp.o
 
 shader.i: shader.cpp.i
@@ -275,7 +275,7 @@ shader.i: shader.cpp.i
 
 # target to preprocess a source file
 shader.cpp.i:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/shader.cpp.i
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/shader.cpp.i
 .PHONY : shader.cpp.i
 
 shader.s: shader.cpp.s
@@ -284,7 +284,7 @@ shader.s: shader.cpp.s
 
 # target to generate assembly for a file
 shader.cpp.s:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/shader.cpp.s
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/shader.cpp.s
 .PHONY : shader.cpp.s
 
 ship.o: ship.cpp.o
@@ -293,7 +293,7 @@ ship.o: ship.cpp.o
 
 # target to build an object file
 ship.cpp.o:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/ship.cpp.o
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/ship.cpp.o
 .PHONY : ship.cpp.o
 
 ship.i: ship.cpp.i
@@ -302,7 +302,7 @@ ship.i: ship.cpp.i
 
 # target to preprocess a source file
 ship.cpp.i:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/ship.cpp.i
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/ship.cpp.i
 .PHONY : ship.cpp.i
 
 ship.s: ship.cpp.s
@@ -311,7 +311,7 @@ ship.s: ship.cpp.s
 
 # target to generate assembly for a file
 ship.cpp.s:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/ship.cpp.s
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/ship.cpp.s
 .PHONY : ship.cpp.s
 
 solar_viewer.o: solar_viewer.cpp.o
@@ -320,7 +320,7 @@ solar_viewer.o: solar_viewer.cpp.o
 
 # target to build an object file
 solar_viewer.cpp.o:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/solar_viewer.cpp.o
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/solar_viewer.cpp.o
 .PHONY : solar_viewer.cpp.o
 
 solar_viewer.i: solar_viewer.cpp.i
@@ -329,7 +329,7 @@ solar_viewer.i: solar_viewer.cpp.i
 
 # target to preprocess a source file
 solar_viewer.cpp.i:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/solar_viewer.cpp.i
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/solar_viewer.cpp.i
 .PHONY : solar_viewer.cpp.i
 
 solar_viewer.s: solar_viewer.cpp.s
@@ -338,7 +338,7 @@ solar_viewer.s: solar_viewer.cpp.s
 
 # target to generate assembly for a file
 solar_viewer.cpp.s:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/solar_viewer.cpp.s
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/solar_viewer.cpp.s
 .PHONY : solar_viewer.cpp.s
 
 sphere.o: sphere.cpp.o
@@ -347,7 +347,7 @@ sphere.o: sphere.cpp.o
 
 # target to build an object file
 sphere.cpp.o:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/sphere.cpp.o
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/sphere.cpp.o
 .PHONY : sphere.cpp.o
 
 sphere.i: sphere.cpp.i
@@ -356,7 +356,7 @@ sphere.i: sphere.cpp.i
 
 # target to preprocess a source file
 sphere.cpp.i:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/sphere.cpp.i
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/sphere.cpp.i
 .PHONY : sphere.cpp.i
 
 sphere.s: sphere.cpp.s
@@ -365,7 +365,7 @@ sphere.s: sphere.cpp.s
 
 # target to generate assembly for a file
 sphere.cpp.s:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/sphere.cpp.s
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/sphere.cpp.s
 .PHONY : sphere.cpp.s
 
 texture.o: texture.cpp.o
@@ -374,7 +374,7 @@ texture.o: texture.cpp.o
 
 # target to build an object file
 texture.cpp.o:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/texture.cpp.o
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/texture.cpp.o
 .PHONY : texture.cpp.o
 
 texture.i: texture.cpp.i
@@ -383,7 +383,7 @@ texture.i: texture.cpp.i
 
 # target to preprocess a source file
 texture.cpp.i:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/texture.cpp.i
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/texture.cpp.i
 .PHONY : texture.cpp.i
 
 texture.s: texture.cpp.s
@@ -392,7 +392,7 @@ texture.s: texture.cpp.s
 
 # target to generate assembly for a file
 texture.cpp.s:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/texture.cpp.s
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f src/CMakeFiles/SolarSystem.dir/build.make src/CMakeFiles/SolarSystem.dir/texture.cpp.s
 .PHONY : texture.cpp.s
 
 # Help Target
@@ -445,6 +445,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

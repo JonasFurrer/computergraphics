@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_FLAGS = -g   -std=gnu++11
 
-CXX_DEFINES = -DGLEW_STATIC -DSHADER_PATH=\"/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src\" -DTEXTURE_PATH=\"/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/textures\"
+CXX_DEFINES = -DGLEW_STATIC -DGLFW_DLL -DSHADER_PATH=\"/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src\" -DTEXTURE_PATH=\"/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/textures\"
 
-CXX_INCLUDES = -I/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/include -I/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src -I/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/lodePNG -isystem /usr/include/GL 
+CXX_INCLUDES = -I/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src -I/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/lib/lodePNG -isystem /usr/include/GL 
 

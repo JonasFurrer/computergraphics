@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/alessandro/clion-2018.2.5/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/jones/Documents/clion-2018.2.5/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/alessandro/clion-2018.2.5/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/jones/Documents/clion-2018.2.5/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL
+CMAKE_SOURCE_DIR = /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug
+CMAKE_BINARY_DIR = /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/alessandro/Dokumente/Übungen/computergrafik/computergr
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/alessandro/clion-2018.2.5/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/jones/Documents/clion-2018.2.5/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -70,7 +70,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/alessandro/clion-2018.2.5/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/jones/Documents/clion-2018.2.5/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -80,14 +80,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/CMakeFiles /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/lodePNG/CMakeFiles/progress.marks
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/lodePNG/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/CMakeFiles 0
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/CMakeFiles /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/lib/lodePNG/CMakeFiles/progress.marks
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/lodePNG/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/lodePNG/clean
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/lodePNG/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/lodePNG/preinstall
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/lodePNG/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/lodePNG/preinstall
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/lodePNG/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lib/lodePNG/CMakeFiles/lodePNG.dir/rule:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/lodePNG/CMakeFiles/lodePNG.dir/rule
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/lodePNG/CMakeFiles/lodePNG.dir/rule
 .PHONY : lib/lodePNG/CMakeFiles/lodePNG.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ lodePNG: lib/lodePNG/CMakeFiles/lodePNG.dir/rule
 
 # fast build rule for target.
 lodePNG/fast:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f lib/lodePNG/CMakeFiles/lodePNG.dir/build.make lib/lodePNG/CMakeFiles/lodePNG.dir/build
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f lib/lodePNG/CMakeFiles/lodePNG.dir/build.make lib/lodePNG/CMakeFiles/lodePNG.dir/build
 .PHONY : lodePNG/fast
 
 lodepng.o: lodepng.cpp.o
@@ -131,7 +131,7 @@ lodepng.o: lodepng.cpp.o
 
 # target to build an object file
 lodepng.cpp.o:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f lib/lodePNG/CMakeFiles/lodePNG.dir/build.make lib/lodePNG/CMakeFiles/lodePNG.dir/lodepng.cpp.o
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f lib/lodePNG/CMakeFiles/lodePNG.dir/build.make lib/lodePNG/CMakeFiles/lodePNG.dir/lodepng.cpp.o
 .PHONY : lodepng.cpp.o
 
 lodepng.i: lodepng.cpp.i
@@ -140,7 +140,7 @@ lodepng.i: lodepng.cpp.i
 
 # target to preprocess a source file
 lodepng.cpp.i:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f lib/lodePNG/CMakeFiles/lodePNG.dir/build.make lib/lodePNG/CMakeFiles/lodePNG.dir/lodepng.cpp.i
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f lib/lodePNG/CMakeFiles/lodePNG.dir/build.make lib/lodePNG/CMakeFiles/lodePNG.dir/lodepng.cpp.i
 .PHONY : lodepng.cpp.i
 
 lodepng.s: lodepng.cpp.s
@@ -149,7 +149,7 @@ lodepng.s: lodepng.cpp.s
 
 # target to generate assembly for a file
 lodepng.cpp.s:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f lib/lodePNG/CMakeFiles/lodePNG.dir/build.make lib/lodePNG/CMakeFiles/lodePNG.dir/lodepng.cpp.s
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(MAKE) -f lib/lodePNG/CMakeFiles/lodePNG.dir/build.make lib/lodePNG/CMakeFiles/lodePNG.dir/lodepng.cpp.s
 .PHONY : lodepng.cpp.s
 
 # Help Target
@@ -175,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

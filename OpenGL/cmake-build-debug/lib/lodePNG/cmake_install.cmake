@@ -1,4 +1,4 @@
-# Install script for directory: /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/lodePNG
+# Install script for directory: /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/lib/lodePNG
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

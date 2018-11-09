@@ -1,4 +1,4 @@
-# Install script for directory: /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL
+# Install script for directory: /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,9 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/glfw/cmake_install.cmake")
-  include("/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/lib/lodePNG/cmake_install.cmake")
-  include("/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src/cmake_install.cmake")
+  include("/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/lib/lodePNG/cmake_install.cmake")
+  include("/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src/cmake_install.cmake")
 
 endif()
 
@@ -53,5 +52,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

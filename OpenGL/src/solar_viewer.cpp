@@ -361,12 +361,19 @@ void Solar_viewer::paint()
 
 
     /** \todo Orient the billboard used to display the sun's glow
-     *  Update billboard_x_andle_ and billboard_y_angle_ so that the billboard plane
+     *  Update billboard_x_angle_ and billboard_y_angle_ so that the billboard plane
      *  drawn to produce the sun's halo is orthogonal to the view vector for
      *  the sun's center.
      */
 
-    billboard_x_angle_ = billboard_y_angle_ = 0.0f;
+    vec4 distance = vec4(0,0,0,0);
+    if(eye.x == 0) distance = vec4(1,0,0,0);
+    else if(eye.y == 0) distance = vec4(0,1,0,0);
+    else if(eye.z == 0) distance = vec4(0,0,1,0);
+    else distance = vec4(-eye.y,eye.x,eye.z,0);
+
+    billboard_x_angle_ = x_angle_ + dot(distance, vec4(1,0,0,0)) / (norm(distance)+1);
+    billboard_y_angle_ = y_angle_ + dot(distance, vec4(0,1,0,0)) / (norm(distance)+1);
 
     mat4 projection = mat4::perspective(fovy_, (float)width_/(float)height_, near_, far_);
     draw_scene(projection, view);
@@ -438,8 +445,6 @@ void Solar_viewer::draw_scene(mat4& _projection, mat4& _view)
     };
 
     draw_planet(stars_);
-
-
     draw_planet(mercury_);
     draw_planet(venus_);
     draw_planet(moon_);
@@ -474,7 +479,7 @@ void Solar_viewer::draw_scene(mat4& _projection, mat4& _view)
     *     billboard_y_angle_
     *   - Bind the texture for and draw sunglow_
     **/
-    m_matrix = mat4::rotate_y(sun_.angle_self_) *mat4::scale(sun_.radius_*3);
+    m_matrix = mat4::rotate_y(billboard_y_angle_) *mat4::rotate_x(billboard_x_angle_) *mat4::scale(sun_.radius_*3);
     mv_matrix = _view * m_matrix;
     mvp_matrix = _projection * mv_matrix;
     color_shader_.use();

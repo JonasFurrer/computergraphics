@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/alessandro/clion-2018.2.5/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/jones/Documents/clion-2018.2.5/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/alessandro/clion-2018.2.5/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/jones/Documents/clion-2018.2.5/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL
+CMAKE_SOURCE_DIR = /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug
+CMAKE_BINARY_DIR = /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/SolarSystem.dir/depend.make
@@ -59,133 +59,133 @@ include src/CMakeFiles/SolarSystem.dir/flags.make
 
 src/CMakeFiles/SolarSystem.dir/bezier.cpp.o: src/CMakeFiles/SolarSystem.dir/flags.make
 src/CMakeFiles/SolarSystem.dir/bezier.cpp.o: ../src/bezier.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/SolarSystem.dir/bezier.cpp.o"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SolarSystem.dir/bezier.cpp.o -c /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/bezier.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/SolarSystem.dir/bezier.cpp.o"
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SolarSystem.dir/bezier.cpp.o -c /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/bezier.cpp
 
 src/CMakeFiles/SolarSystem.dir/bezier.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SolarSystem.dir/bezier.cpp.i"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/bezier.cpp > CMakeFiles/SolarSystem.dir/bezier.cpp.i
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/bezier.cpp > CMakeFiles/SolarSystem.dir/bezier.cpp.i
 
 src/CMakeFiles/SolarSystem.dir/bezier.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SolarSystem.dir/bezier.cpp.s"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/bezier.cpp -o CMakeFiles/SolarSystem.dir/bezier.cpp.s
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/bezier.cpp -o CMakeFiles/SolarSystem.dir/bezier.cpp.s
 
 src/CMakeFiles/SolarSystem.dir/billboard.cpp.o: src/CMakeFiles/SolarSystem.dir/flags.make
 src/CMakeFiles/SolarSystem.dir/billboard.cpp.o: ../src/billboard.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/SolarSystem.dir/billboard.cpp.o"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SolarSystem.dir/billboard.cpp.o -c /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/billboard.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/SolarSystem.dir/billboard.cpp.o"
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SolarSystem.dir/billboard.cpp.o -c /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/billboard.cpp
 
 src/CMakeFiles/SolarSystem.dir/billboard.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SolarSystem.dir/billboard.cpp.i"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/billboard.cpp > CMakeFiles/SolarSystem.dir/billboard.cpp.i
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/billboard.cpp > CMakeFiles/SolarSystem.dir/billboard.cpp.i
 
 src/CMakeFiles/SolarSystem.dir/billboard.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SolarSystem.dir/billboard.cpp.s"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/billboard.cpp -o CMakeFiles/SolarSystem.dir/billboard.cpp.s
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/billboard.cpp -o CMakeFiles/SolarSystem.dir/billboard.cpp.s
 
 src/CMakeFiles/SolarSystem.dir/glfw_window.cpp.o: src/CMakeFiles/SolarSystem.dir/flags.make
 src/CMakeFiles/SolarSystem.dir/glfw_window.cpp.o: ../src/glfw_window.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/SolarSystem.dir/glfw_window.cpp.o"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SolarSystem.dir/glfw_window.cpp.o -c /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/glfw_window.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/SolarSystem.dir/glfw_window.cpp.o"
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SolarSystem.dir/glfw_window.cpp.o -c /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/glfw_window.cpp
 
 src/CMakeFiles/SolarSystem.dir/glfw_window.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SolarSystem.dir/glfw_window.cpp.i"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/glfw_window.cpp > CMakeFiles/SolarSystem.dir/glfw_window.cpp.i
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/glfw_window.cpp > CMakeFiles/SolarSystem.dir/glfw_window.cpp.i
 
 src/CMakeFiles/SolarSystem.dir/glfw_window.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SolarSystem.dir/glfw_window.cpp.s"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/glfw_window.cpp -o CMakeFiles/SolarSystem.dir/glfw_window.cpp.s
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/glfw_window.cpp -o CMakeFiles/SolarSystem.dir/glfw_window.cpp.s
 
 src/CMakeFiles/SolarSystem.dir/glmath.cpp.o: src/CMakeFiles/SolarSystem.dir/flags.make
 src/CMakeFiles/SolarSystem.dir/glmath.cpp.o: ../src/glmath.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/SolarSystem.dir/glmath.cpp.o"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SolarSystem.dir/glmath.cpp.o -c /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/glmath.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/SolarSystem.dir/glmath.cpp.o"
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SolarSystem.dir/glmath.cpp.o -c /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/glmath.cpp
 
 src/CMakeFiles/SolarSystem.dir/glmath.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SolarSystem.dir/glmath.cpp.i"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/glmath.cpp > CMakeFiles/SolarSystem.dir/glmath.cpp.i
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/glmath.cpp > CMakeFiles/SolarSystem.dir/glmath.cpp.i
 
 src/CMakeFiles/SolarSystem.dir/glmath.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SolarSystem.dir/glmath.cpp.s"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/glmath.cpp -o CMakeFiles/SolarSystem.dir/glmath.cpp.s
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/glmath.cpp -o CMakeFiles/SolarSystem.dir/glmath.cpp.s
 
 src/CMakeFiles/SolarSystem.dir/main.cpp.o: src/CMakeFiles/SolarSystem.dir/flags.make
 src/CMakeFiles/SolarSystem.dir/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/SolarSystem.dir/main.cpp.o"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SolarSystem.dir/main.cpp.o -c /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/SolarSystem.dir/main.cpp.o"
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SolarSystem.dir/main.cpp.o -c /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/main.cpp
 
 src/CMakeFiles/SolarSystem.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SolarSystem.dir/main.cpp.i"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/main.cpp > CMakeFiles/SolarSystem.dir/main.cpp.i
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/main.cpp > CMakeFiles/SolarSystem.dir/main.cpp.i
 
 src/CMakeFiles/SolarSystem.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SolarSystem.dir/main.cpp.s"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/main.cpp -o CMakeFiles/SolarSystem.dir/main.cpp.s
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/main.cpp -o CMakeFiles/SolarSystem.dir/main.cpp.s
 
 src/CMakeFiles/SolarSystem.dir/shader.cpp.o: src/CMakeFiles/SolarSystem.dir/flags.make
 src/CMakeFiles/SolarSystem.dir/shader.cpp.o: ../src/shader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/SolarSystem.dir/shader.cpp.o"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SolarSystem.dir/shader.cpp.o -c /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/shader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/SolarSystem.dir/shader.cpp.o"
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SolarSystem.dir/shader.cpp.o -c /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/shader.cpp
 
 src/CMakeFiles/SolarSystem.dir/shader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SolarSystem.dir/shader.cpp.i"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/shader.cpp > CMakeFiles/SolarSystem.dir/shader.cpp.i
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/shader.cpp > CMakeFiles/SolarSystem.dir/shader.cpp.i
 
 src/CMakeFiles/SolarSystem.dir/shader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SolarSystem.dir/shader.cpp.s"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/shader.cpp -o CMakeFiles/SolarSystem.dir/shader.cpp.s
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/shader.cpp -o CMakeFiles/SolarSystem.dir/shader.cpp.s
 
 src/CMakeFiles/SolarSystem.dir/ship.cpp.o: src/CMakeFiles/SolarSystem.dir/flags.make
 src/CMakeFiles/SolarSystem.dir/ship.cpp.o: ../src/ship.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/SolarSystem.dir/ship.cpp.o"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SolarSystem.dir/ship.cpp.o -c /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/ship.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/SolarSystem.dir/ship.cpp.o"
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SolarSystem.dir/ship.cpp.o -c /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/ship.cpp
 
 src/CMakeFiles/SolarSystem.dir/ship.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SolarSystem.dir/ship.cpp.i"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/ship.cpp > CMakeFiles/SolarSystem.dir/ship.cpp.i
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/ship.cpp > CMakeFiles/SolarSystem.dir/ship.cpp.i
 
 src/CMakeFiles/SolarSystem.dir/ship.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SolarSystem.dir/ship.cpp.s"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/ship.cpp -o CMakeFiles/SolarSystem.dir/ship.cpp.s
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/ship.cpp -o CMakeFiles/SolarSystem.dir/ship.cpp.s
 
 src/CMakeFiles/SolarSystem.dir/solar_viewer.cpp.o: src/CMakeFiles/SolarSystem.dir/flags.make
 src/CMakeFiles/SolarSystem.dir/solar_viewer.cpp.o: ../src/solar_viewer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/SolarSystem.dir/solar_viewer.cpp.o"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SolarSystem.dir/solar_viewer.cpp.o -c /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/solar_viewer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/SolarSystem.dir/solar_viewer.cpp.o"
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SolarSystem.dir/solar_viewer.cpp.o -c /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/solar_viewer.cpp
 
 src/CMakeFiles/SolarSystem.dir/solar_viewer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SolarSystem.dir/solar_viewer.cpp.i"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/solar_viewer.cpp > CMakeFiles/SolarSystem.dir/solar_viewer.cpp.i
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/solar_viewer.cpp > CMakeFiles/SolarSystem.dir/solar_viewer.cpp.i
 
 src/CMakeFiles/SolarSystem.dir/solar_viewer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SolarSystem.dir/solar_viewer.cpp.s"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/solar_viewer.cpp -o CMakeFiles/SolarSystem.dir/solar_viewer.cpp.s
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/solar_viewer.cpp -o CMakeFiles/SolarSystem.dir/solar_viewer.cpp.s
 
 src/CMakeFiles/SolarSystem.dir/sphere.cpp.o: src/CMakeFiles/SolarSystem.dir/flags.make
 src/CMakeFiles/SolarSystem.dir/sphere.cpp.o: ../src/sphere.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/SolarSystem.dir/sphere.cpp.o"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SolarSystem.dir/sphere.cpp.o -c /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/sphere.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/SolarSystem.dir/sphere.cpp.o"
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SolarSystem.dir/sphere.cpp.o -c /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/sphere.cpp
 
 src/CMakeFiles/SolarSystem.dir/sphere.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SolarSystem.dir/sphere.cpp.i"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/sphere.cpp > CMakeFiles/SolarSystem.dir/sphere.cpp.i
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/sphere.cpp > CMakeFiles/SolarSystem.dir/sphere.cpp.i
 
 src/CMakeFiles/SolarSystem.dir/sphere.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SolarSystem.dir/sphere.cpp.s"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/sphere.cpp -o CMakeFiles/SolarSystem.dir/sphere.cpp.s
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/sphere.cpp -o CMakeFiles/SolarSystem.dir/sphere.cpp.s
 
 src/CMakeFiles/SolarSystem.dir/texture.cpp.o: src/CMakeFiles/SolarSystem.dir/flags.make
 src/CMakeFiles/SolarSystem.dir/texture.cpp.o: ../src/texture.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/CMakeFiles/SolarSystem.dir/texture.cpp.o"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SolarSystem.dir/texture.cpp.o -c /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/texture.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/CMakeFiles/SolarSystem.dir/texture.cpp.o"
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SolarSystem.dir/texture.cpp.o -c /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/texture.cpp
 
 src/CMakeFiles/SolarSystem.dir/texture.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SolarSystem.dir/texture.cpp.i"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/texture.cpp > CMakeFiles/SolarSystem.dir/texture.cpp.i
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/texture.cpp > CMakeFiles/SolarSystem.dir/texture.cpp.i
 
 src/CMakeFiles/SolarSystem.dir/texture.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SolarSystem.dir/texture.cpp.s"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src/texture.cpp -o CMakeFiles/SolarSystem.dir/texture.cpp.s
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src/texture.cpp -o CMakeFiles/SolarSystem.dir/texture.cpp.s
 
 # Object files for target SolarSystem
 SolarSystem_OBJECTS = \
@@ -216,22 +216,13 @@ SolarSystem: src/CMakeFiles/SolarSystem.dir/texture.cpp.o
 SolarSystem: src/CMakeFiles/SolarSystem.dir/build.make
 SolarSystem: /usr/lib/x86_64-linux-gnu/libGLEW.so
 SolarSystem: liblodePNG.a
-SolarSystem: libglfw.so.3.1
+SolarSystem: /usr/lib/x86_64-linux-gnu/libglfw.so.3.2
 SolarSystem: /usr/lib/x86_64-linux-gnu/libGLEW.so
 SolarSystem: /usr/lib/x86_64-linux-gnu/libGL.so
 SolarSystem: /usr/lib/x86_64-linux-gnu/libGLU.so
-SolarSystem: /usr/lib/x86_64-linux-gnu/librt.so
-SolarSystem: /usr/lib/x86_64-linux-gnu/libm.so
-SolarSystem: /usr/lib/x86_64-linux-gnu/libX11.so
-SolarSystem: /usr/lib/x86_64-linux-gnu/libXrandr.so
-SolarSystem: /usr/lib/x86_64-linux-gnu/libXinerama.so
-SolarSystem: /usr/lib/x86_64-linux-gnu/libXi.so
-SolarSystem: /usr/lib/x86_64-linux-gnu/libXxf86vm.so
-SolarSystem: /usr/lib/x86_64-linux-gnu/libXcursor.so
-SolarSystem: /usr/lib/x86_64-linux-gnu/libGL.so
 SolarSystem: src/CMakeFiles/SolarSystem.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable ../SolarSystem"
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SolarSystem.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable ../SolarSystem"
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SolarSystem.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/SolarSystem.dir/build: SolarSystem
@@ -239,10 +230,10 @@ src/CMakeFiles/SolarSystem.dir/build: SolarSystem
 .PHONY : src/CMakeFiles/SolarSystem.dir/build
 
 src/CMakeFiles/SolarSystem.dir/clean:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src && $(CMAKE_COMMAND) -P CMakeFiles/SolarSystem.dir/cmake_clean.cmake
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src && $(CMAKE_COMMAND) -P CMakeFiles/SolarSystem.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/SolarSystem.dir/clean
 
 src/CMakeFiles/SolarSystem.dir/depend:
-	cd /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug/src/CMakeFiles/SolarSystem.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug/src/CMakeFiles/SolarSystem.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/SolarSystem.dir/depend
 

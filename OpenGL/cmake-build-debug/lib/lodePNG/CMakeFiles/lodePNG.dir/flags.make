@@ -6,5 +6,5 @@ CXX_FLAGS =  -fPIC -Wall -pedantic -ansi -g   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/glfw/include -I/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/src -I/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/lib/lodePNG 
+CXX_INCLUDES = -I/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/src -I/home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/lib/lodePNG 
 

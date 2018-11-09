@@ -1,4 +1,4 @@
-/home/alessandro/clion-2018.2.5/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL
+/home/jones/Documents/clion-2018.2.5/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL
 -- The C compiler identification is GNU 7.3.0
 -- The CXX compiler identification is GNU 7.3.0
 -- Check for working C compiler: /usr/bin/cc
@@ -14,63 +14,8 @@
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
 Using system GLEW
-System GLFW not found... falling back to local GLFW
-CMake Deprecation Warning at lib/glfw/CMakeLists.txt:8 (cmake_policy):
-  The OLD behavior for policy CMP0042 will be removed from a future version
-  of CMake.
-
-  The cmake-policies(7) manual explains that the OLD behaviors of all
-  policies are deprecated and that a policy should be set to OLD only under
-  specific short-term circumstances.  Projects should be ported to the NEW
-  behavior and not rely on setting a policy to OLD.
-
-
-CMake Warning (dev) at /home/alessandro/clion-2018.2.5/bin/cmake/linux/share/cmake-3.12/Modules/FindOpenGL.cmake:270 (message):
-  Policy CMP0072 is not set: FindOpenGL prefers GLVND by default when
-  available.  Run "cmake --help-policy CMP0072" for policy details.  Use the
-  cmake_policy command to set the policy and suppress this warning.
-
-  FindOpenGL found both a legacy GL library:
-
-    OPENGL_gl_LIBRARY: /usr/lib/x86_64-linux-gnu/libGL.so
-
-  and GLVND libraries for OpenGL and GLX:
-
-    OPENGL_opengl_LIBRARY: /usr/lib/x86_64-linux-gnu/libOpenGL.so
-    OPENGL_glx_LIBRARY: /usr/lib/x86_64-linux-gnu/libGLX.so
-
-  OpenGL_GL_PREFERENCE has not been set to "GLVND" or "LEGACY", so for
-  compatibility with CMake 3.10 and below the legacy GL library will be used.
-Call Stack (most recent call first):
-  lib/glfw/CMakeLists.txt:88 (find_package)
-This warning is for project developers.  Use -Wno-dev to suppress it.
-
--- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
--- Looking for pthread.h
--- Looking for pthread.h - found
--- Looking for pthread_create
--- Looking for pthread_create - not found
--- Looking for pthread_create in pthreads
--- Looking for pthread_create in pthreads - not found
--- Looking for pthread_create in pthread
--- Looking for pthread_create in pthread - found
--- Found Threads: TRUE  
--- Using X11 for window creation
--- Using GLX for context creation
--- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
--- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
--- Looking for gethostbyname
--- Looking for gethostbyname - found
--- Looking for connect
--- Looking for connect - found
--- Looking for remove
--- Looking for remove - found
--- Looking for shmat
--- Looking for shmat - found
--- Looking for IceConnectionNumber in ICE
--- Looking for IceConnectionNumber in ICE - found
--- Found X11: /usr/lib/x86_64-linux-gnu/libX11.so
-CMake Warning (dev) at /home/alessandro/clion-2018.2.5/bin/cmake/linux/share/cmake-3.12/Modules/FindOpenGL.cmake:270 (message):
+Using system GLFW
+CMake Warning (dev) at /home/jones/Documents/clion-2018.2.5/bin/cmake/linux/share/cmake-3.12/Modules/FindOpenGL.cmake:270 (message):
   Policy CMP0072 is not set: FindOpenGL prefers GLVND by default when
   available.  Run "cmake --help-policy CMP0072" for policy details.  Use the
   cmake_policy command to set the policy and suppress this warning.
@@ -90,7 +35,8 @@ Call Stack (most recent call first):
   src/CMakeLists.txt:2 (find_package)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
+-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
 -- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/OpenGL/cmake-build-debug
+-- Build files have been written to: /home/jones/Documents/Computergraphics/repository/computergraphics/OpenGL/cmake-build-debug
