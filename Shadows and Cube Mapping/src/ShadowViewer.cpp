@@ -44,7 +44,37 @@ mat4 ShadowViewer::m_constructLightViewMatrix(size_t li, size_t cube_face) const
     * defined by scene_view_matrix.
     * Hint: use mat4::look_at
     **/
-    return mat4::identity() * scene_view_matrix;
+
+    mat4 light_view_matrix = mat4::identity();
+    vec3 eye = m_light[li].position();
+    vec3 center = eye;
+    vec3 up = vec3(0,0,0);
+
+    switch(cube_face){
+        case 0: center = vec3(center[0]+1,center[1],center[2]);
+                up = vec3(0,1,0);
+                break;
+        case 1: center = vec3(center[0]-1,center[1],center[2]);
+                up = vec3(0,1,0);
+                break;
+        case 2: center = vec3(center[0],center[1]+1,center[2]);
+                up = vec3(0,0,-1);
+                break;
+        case 3: center = vec3(center[0],center[1]-1,center[2]);
+                up = vec3(0,0,1);
+                break;
+        case 4: center = vec3(center[0],center[1],center[2]+1);
+                up = vec3(0,1,0);
+                break;
+        case 5: center = vec3(center[0],center[1],center[2]-1);
+                up = vec3(0,1,0);
+                break;
+    }
+
+    mat3 rot = mat4::rotate_y(m_viewParameters.y_angle) *
+               mat4::rotate_x(m_viewParameters.x_angle);
+
+    return scene_view_matrix.look_at(eye, rot*center, rot*up);
 }
 
 mat4 ShadowViewer::m_constructLightProjectionMatrix() const {
@@ -52,7 +82,9 @@ mat4 ShadowViewer::m_constructLightProjectionMatrix() const {
     * Construct the projection matrix for rendering the scene from the perspective
     * of the light to generate shadow maps.
     **/
-    return mat4::identity();
+    float fovy = 90.0f;
+    float aspect = 1.0f;
+    return mat4::perspective(fovy, aspect, 0.1, 6);
 }
 
 void ShadowViewer::m_render_shadow_cubemap(size_t li, const mat4 &plane_m_matrix, const mat4 &mesh_m_matrix) {
@@ -138,6 +170,9 @@ void ShadowViewer::draw(const mat4 &view_matrix, const mat4 &projection_matrix) 
         * output by our shader to the colors already in the framebuffer.
         * Hint: read the documentation for glBlendFunc
         **/
+        glBlendFunc(GL_SRC_COLOR,GL_DST_COLOR);
+        glBlendFunc(GL_SRC_ALPHA, GL_DST_ALPHA);
+        glEnable(GL_BLEND);
 
         m_phong_shader.use();
         m_shadowMap->bind();

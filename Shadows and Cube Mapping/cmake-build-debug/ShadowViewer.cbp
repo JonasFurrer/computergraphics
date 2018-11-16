@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="ShadowViewer"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\glfw3\;CMake Files\lib\;CMake Files\lib\lodePNG\;CMake Files\src\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows\ and\ Cube\ Mapping/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows\ and\ Cube\ Mapping/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows\ and\ Cube\ Mapping/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows\ and\ Cube\ Mapping/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows\ and\ Cube\ Mapping/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows\ and\ Cube\ Mapping/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows\ and\ Cube\ Mapping/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows\ and\ Cube\ Mapping/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows\ and\ Cube\ Mapping/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows\ and\ Cube\ Mapping/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows\ and\ Cube\ Mapping/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows\ and\ Cube\ Mapping/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lodePNG">
+				<Option output="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/cmake-build-debug/liblodePNG.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/cmake-build-debug/lib/lodePNG"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src"/>
+					<Add directory="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/lib/lodePNG"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows\ and\ Cube\ Mapping/cmake-build-debug/lib/lodePNG/Makefile&quot;  VERBOSE=1 lodePNG"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows\ and\ Cube\ Mapping/cmake-build-debug/lib/lodePNG/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows\ and\ Cube\ Mapping/cmake-build-debug/lib/lodePNG/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows\ and\ Cube\ Mapping/cmake-build-debug/lib/lodePNG/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lodePNG/fast">
+				<Option output="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/cmake-build-debug/liblodePNG.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/cmake-build-debug/lib/lodePNG"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src"/>
+					<Add directory="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/lib/lodePNG"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows\ and\ Cube\ Mapping/cmake-build-debug/lib/lodePNG/Makefile&quot;  VERBOSE=1 lodePNG/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows\ and\ Cube\ Mapping/cmake-build-debug/lib/lodePNG/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows\ and\ Cube\ Mapping/cmake-build-debug/lib/lodePNG/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows\ and\ Cube\ Mapping/cmake-build-debug/lib/lodePNG/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ShadowViewer">
+				<Option output="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/cmake-build-debug/ShadowViewer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-DSHADER_PATH=&quot;/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/shaders&quot;"/>
+					<Add option="-DMESH_PATH=&quot;/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/meshes&quot;"/>
+					<Add option="-DTEXTURE_PATH=&quot;/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/textures&quot;"/>
+					<Add option="-DGLFW_DLL"/>
+					<Add directory="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src"/>
+					<Add directory="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/lib/lodePNG"/>
+					<Add directory="/usr/include/GL"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows\ and\ Cube\ Mapping/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 ShadowViewer"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows\ and\ Cube\ Mapping/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows\ and\ Cube\ Mapping/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows\ and\ Cube\ Mapping/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ShadowViewer/fast">
+				<Option output="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/cmake-build-debug/ShadowViewer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-DSHADER_PATH=&quot;/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/shaders&quot;"/>
+					<Add option="-DMESH_PATH=&quot;/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/meshes&quot;"/>
+					<Add option="-DTEXTURE_PATH=&quot;/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/textures&quot;"/>
+					<Add option="-DGLFW_DLL"/>
+					<Add directory="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src"/>
+					<Add directory="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/lib/lodePNG"/>
+					<Add directory="/usr/include/GL"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows\ and\ Cube\ Mapping/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 ShadowViewer/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows\ and\ Cube\ Mapping/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows\ and\ Cube\ Mapping/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows\ and\ Cube\ Mapping/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/lib/lodePNG/lodepng.cpp">
+			<Option target="lodePNG"/>
+		</Unit>
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/lib/lodePNG/lodepng.h">
+			<Option target="lodePNG"/>
+		</Unit>
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/CubeMapVisualization.h">
+			<Option target="ShadowViewer"/>
+		</Unit>
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/Mesh.cpp">
+			<Option target="ShadowViewer"/>
+		</Unit>
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/Mesh.h">
+			<Option target="ShadowViewer"/>
+		</Unit>
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/Quad.h">
+			<Option target="ShadowViewer"/>
+		</Unit>
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/ShadowViewer.cpp">
+			<Option target="ShadowViewer"/>
+		</Unit>
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/ShadowViewer.h">
+			<Option target="ShadowViewer"/>
+		</Unit>
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/dumpOpenGLBuffer.h">
+			<Option target="ShadowViewer"/>
+		</Unit>
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/gl.h">
+			<Option target="ShadowViewer"/>
+		</Unit>
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/glfw_window.cpp">
+			<Option target="ShadowViewer"/>
+		</Unit>
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/glfw_window.h">
+			<Option target="ShadowViewer"/>
+		</Unit>
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/glmath.cpp">
+			<Option target="ShadowViewer"/>
+		</Unit>
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/glmath.h">
+			<Option target="ShadowViewer"/>
+		</Unit>
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/main.cpp">
+			<Option target="ShadowViewer"/>
+		</Unit>
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/shader.cpp">
+			<Option target="ShadowViewer"/>
+		</Unit>
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/shader.h">
+			<Option target="ShadowViewer"/>
+		</Unit>
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/sphere.cpp">
+			<Option target="ShadowViewer"/>
+		</Unit>
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/sphere.h">
+			<Option target="ShadowViewer"/>
+		</Unit>
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/glfw3/glfw3Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\glfw3\"/>
+		</Unit>
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/glfw3/glfw3ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\glfw3\"/>
+		</Unit>
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/glfw3/glfw3Targets-none.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\glfw3\"/>
+		</Unit>
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/glfw3/glfw3Targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\glfw3\"/>
+		</Unit>
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/lib/lodePNG/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\lodePNG\"/>
+		</Unit>
+		<Unit filename="/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

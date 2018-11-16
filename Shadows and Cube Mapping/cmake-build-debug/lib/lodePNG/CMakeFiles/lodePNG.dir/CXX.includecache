@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/lib/lodePNG/lodepng.cpp
+lodepng.h
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/lib/lodePNG/lodepng.h
+stdio.h
+-
+stdlib.h
+-
+fstream
+-
+
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/lib/lodePNG/lodepng.h
+string.h
+-
+vector
+-
+string
+-
+lodepng.h
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/lib/lodePNG/lodepng.h
+iostream
+-
+lodepng.h
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/lib/lodePNG/lodepng.h
+

@@ -1,0 +1,166 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../lib/lodePNG/lodepng.h
+string.h
+-
+vector
+-
+string
+-
+lodepng.h
+../lib/lodePNG/lodepng.h
+iostream
+-
+lodepng.h
+../lib/lodePNG/lodepng.h
+
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/CubeMapVisualization.h
+Quad.h
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/Quad.h
+gl.h
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/gl.h
+glmath.h
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/glmath.h
+shader.h
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/shader.h
+lodepng.h
+-
+
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/Mesh.h
+vector
+-
+string
+-
+array
+-
+glmath.h
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/glmath.h
+gl.h
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/gl.h
+
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/PointLightShadowMap.hh
+gl.h
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/gl.h
+
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/Quad.h
+gl.h
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/gl.h
+
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/ShadowViewer.cpp
+ShadowViewer.h
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/ShadowViewer.h
+dumpOpenGLBuffer.h
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/dumpOpenGLBuffer.h
+Quad.h
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/Quad.h
+cassert
+-
+
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/ShadowViewer.h
+gl.h
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/gl.h
+glfw_window.h
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/glfw_window.h
+array
+-
+string
+-
+memory
+-
+shader.h
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/shader.h
+Mesh.h
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/Mesh.h
+Quad.h
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/Quad.h
+sphere.h
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/sphere.h
+PointLightShadowMap.hh
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/PointLightShadowMap.hh
+CubeMapVisualization.h
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/CubeMapVisualization.h
+
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/dumpOpenGLBuffer.h
+lodepng.h
+-
+vector
+-
+algorithm
+-
+iostream
+-
+gl.h
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/gl.h
+
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/gl.h
+glew.h
+-
+stdlib.h
+-
+glew.h
+-
+glew.h
+-
+iostream
+-
+
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/glfw_window.h
+gl.h
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/gl.h
+stdlib.h
+-
+stdio.h
+-
+GLFW/glfw3.h
+-
+vector
+-
+map
+-
+string
+-
+
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/glmath.h
+iostream
+-
+cassert
+-
+math.h
+-
+algorithm
+-
+
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/shader.h
+gl.h
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/gl.h
+glmath.h
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/glmath.h
+vector
+-
+
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/sphere.h
+gl.h
+/home/jones/Documents/Computergraphics/repository/computergraphics/Shadows and Cube Mapping/src/gl.h
+
+/usr/include/GL/glew.h
+stddef.h
+-
+inttypes.h
+-
+stdint.h
+-
+inttypes.h
+-
+Availability.h
+-
+OpenGL/glu.h
+-
+GL/glu.h
+-
+

@@ -46,6 +46,24 @@ void main()
     ***/
     vec3 color = vec3(0.0f);
 
+        // normalize directions
+        vec3 L = normalize(light_position);
+        vec3 V = normalize(v2f_ec_vertex);
+        vec3 R = normalize(reflect(-L, N));
+
+        // compute diffuse and specular intensities
+        float ambient  = 0.2;
+        float diffuse  = max(0.0, dot(N,L));
+        float specular = (diffuse != 0.0) ? pow(max(0.0, dot(V,R)), shininess) : 0.0;
+
+        // fetch textures
+        float texture = texture(shadow_map, V).r;
+
+        if (length(-v2f_ec_vertex) <= texture) {
+            color = diffuse*diffuse_color + specular*specular_color;
+        }
+
+
     // append the required alpha value
     f_light_contribution = vec4(color, 1.0);
 }
