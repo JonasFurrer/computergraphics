@@ -9,7 +9,9 @@ std::string LindenmayerSystemDeterministic::expandSymbol(unsigned char const& sy
 		TODO 1.1
 		For a given symbol in the sequence, what should it be replaced with after expansion?
 	*/
-
+	if(rules.find(sym) != rules.end()){
+        return rules.find(sym)-> second;
+	}else
 	return {char(sym)}; // this constructs string from char
 	
 	//============================================================
@@ -27,9 +29,11 @@ std::string LindenmayerSystem::expandOnce(std::string const& symbol_sequence) {
 		Perform one iteration of grammar expansion on `symbol_sequence`.
 		Use the expandSymbol method
 	*/
-	
-	return "";
-
+	std::string result = "";
+	for(char c: symbol_sequence) {
+		result += expandSymbol(c);
+	}
+	return result;
 	//============================================================
 }
 
@@ -38,8 +42,12 @@ std::string LindenmayerSystem::expand(std::string const& initial, uint32_t num_i
 		TODO 1.3
 		Perform `num_iters` iterations of grammar expansion (use expandOnce)
 	*/
-
-	return "";
+	std::string result = initial;
+	for(int i = 0; i < num_iters; i++){
+		result = expandOnce(result);
+	}
+    //std::cout << result;
+	return result;
 	
 	//============================================================
 }
@@ -62,6 +70,49 @@ std::vector<Segment> LindenmayerSystem::draw(std::string const& symbols) {
 		There also is a mat2 class in utils/vec.* you may find useful for
 		implementing rotations.
 	*/
+    vec2 initial = vec2(0,0);
+    vec2 up = vec2(0,1);
+
+
+    lines.push_back({initial, initial+up});
+
+    std::stack<Segment> st;
+    std::pair<vec2,vec2> tempPair;
+    mat2 rotMat = mat2(cos(rotation_angle_deg),-sin(rotation_angle_deg),sin(rotation_angle_deg),cos(rotation_angle_deg));
+    mat2 rotMat2 = mat2(cos(-rotation_angle_deg),-sin(-rotation_angle_deg),sin(-rotation_angle_deg),cos(-rotation_angle_deg));
+
+
+
+    for(char c : symbols){
+
+        switch (c){
+
+            case '+':
+                up = rotMat*up;
+               // up = lines.push_back({lines.back().second,newV});
+                break;
+            case '-':
+                up = rotMat2*up;
+                //lines.push_back({lines.back().second,newV});
+                break;
+            case '[':
+                st.push({lines.back().second,up});
+                break;
+            case ']':
+                tempPair = st.top();
+                up = tempPair.second;
+                lines.push_back({tempPair.first, tempPair.first});
+                st.pop();
+                break;
+            default :
+                lines.push_back({lines.back().second, lines.back().second + up});
+                break;
+
+
+        }
+    }
+
+
 
 	return lines;
 	//============================================================

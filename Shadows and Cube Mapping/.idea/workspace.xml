@@ -12,12 +12,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8af0b60f-f561-4164-a0e0-d99b034d9451" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../OpenGL/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OpenGL/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shaders/phong_shadow.frag" beforeDir="false" afterPath="$PROJECT_DIR$/shaders/phong_shadow.frag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shaders/shadowmap_gen.frag" beforeDir="false" afterPath="$PROJECT_DIR$/shaders/shadowmap_gen.frag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ShadowViewer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShadowViewer.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="8af0b60f-f561-4164-a0e0-d99b034d9451" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,9 +60,18 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1336659308">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -191,16 +195,17 @@
       <updated>1542109654738</updated>
       <workItem from="1542109656480" duration="6383000" />
       <workItem from="1542317986119" duration="9608000" />
+      <workItem from="1542712755838" duration="163000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15991000" />
+    <option name="totallyTimeSpent" value="16154000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18151632" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18372993" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -215,7 +220,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="CMake" order="12" weight="0.32864866" />
+      <window_info anchor="bottom" id="CMake" order="12" visible="true" weight="0.32864866" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />

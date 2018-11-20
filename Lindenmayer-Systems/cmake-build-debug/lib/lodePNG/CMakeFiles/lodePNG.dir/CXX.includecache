@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/Lindenmayer-Systems/lib/lodePNG/lodepng.cpp
+lodepng.h
+/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/Lindenmayer-Systems/lib/lodePNG/lodepng.h
+stdio.h
+-
+stdlib.h
+-
+fstream
+-
+
+/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/Lindenmayer-Systems/lib/lodePNG/lodepng.h
+string.h
+-
+vector
+-
+string
+-
+lodepng.h
+/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/Lindenmayer-Systems/lib/lodePNG/lodepng.h
+iostream
+-
+lodepng.h
+/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/Lindenmayer-Systems/lib/lodePNG/lodepng.h
+
