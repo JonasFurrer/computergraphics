@@ -126,6 +126,15 @@ std::string LindenmayerSystemStochastic::expandSymbol(unsigned char const& sym) 
 
 		Use dice.roll() to get a random number between 0 and 1
 	*/
+
+    if(rules.find(sym) != rules.end()){
+
+        std::vector<StochasticRule> ruleV = rules.find(sym)->second;
+        for(StochasticRule r : ruleV){
+            if(r.probability == dice.roll()) return r.expansion;
+        }
+
+    }
 	
 	return {char(sym)};
 
