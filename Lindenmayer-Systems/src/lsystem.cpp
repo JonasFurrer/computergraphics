@@ -78,8 +78,8 @@ std::vector<Segment> LindenmayerSystem::draw(std::string const& symbols) {
 
     std::stack<Segment> st;
     std::pair<vec2,vec2> tempPair;
-    mat2 rotMat = mat2(cos(rotation_angle_deg),-sin(rotation_angle_deg),sin(rotation_angle_deg),cos(rotation_angle_deg));
-    mat2 rotMat2 = mat2(cos(-rotation_angle_deg),-sin(-rotation_angle_deg),sin(-rotation_angle_deg),cos(-rotation_angle_deg));
+    mat2 rotMat = mat2(cos(deg2rad(rotation_angle_deg)),-sin(deg2rad(rotation_angle_deg)),sin(deg2rad(rotation_angle_deg)),cos(deg2rad(rotation_angle_deg)));
+    mat2 rotMat2 = mat2(cos(-deg2rad(rotation_angle_deg)),-sin(-deg2rad(rotation_angle_deg)),sin(-deg2rad(rotation_angle_deg)),cos(-deg2rad(rotation_angle_deg)));
 
 
 
