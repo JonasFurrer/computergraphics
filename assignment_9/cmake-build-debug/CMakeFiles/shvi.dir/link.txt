@@ -1,1 +1,0 @@
-/usr/bin/c++   -fopenmp -g    -rdynamic CMakeFiles/shvi.dir/src/main_shader_viewer.cpp.o  -o shvi -Wl,-rpath,/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/assignment_9/cmake-build-debug librender_shared.a -lGLEW -lGLU libglfw.so.3.1 -lrt -lm -lX11 -lpthread -lXrandr -lXinerama -lXi -lXxf86vm -lXcursor -lGL -ldl liblodePNG.a 

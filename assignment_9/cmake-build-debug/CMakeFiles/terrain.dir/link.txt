@@ -1,1 +1,0 @@
-/usr/bin/c++   -fopenmp -g    -rdynamic CMakeFiles/terrain.dir/src/main_terrain.cpp.o  -o terrain -Wl,-rpath,/home/alessandro/Dokumente/Übungen/computergrafik/computergraphics/assignment_9/cmake-build-debug librender_shared.a -lGLEW -lGLU libglfw.so.3.1 -lrt -lm -lX11 -lpthread -lXrandr -lXinerama -lXi -lXxf86vm -lXcursor -lGL -ldl liblodePNG.a 
