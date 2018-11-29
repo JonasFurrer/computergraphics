@@ -46,7 +46,7 @@ void main()
 
      if(height < terrain_water_level){
        material = terrain_color_water;
-        shininess = 8.0;
+       shininess = 8.0;
      }
 
 
